@@ -1,0 +1,39 @@
+{
+	"name": "gcmhs",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "eslint .",
+		"prettier": "prettier --write --list-different ."
+	},
+	"dependencies": {
+		"@heroicons/vue": "^2.1.5",
+		"@nuxt/scripts": "^0.13.2",
+		"@nuxt/ui": "^2.21.1",
+		"@nuxtjs/google-fonts": "^3.2.0",
+		"nuxt": "^4.3.1",
+		"nuxt-viewport": "^2.1.5",
+		"vue": "latest",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@nuxt/eslint-config": "^0.3.13",
+		"@nuxtjs/color-mode": "^3.4.4",
+		"@nuxtjs/tailwindcss": "^6.13.2",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"prettier": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.5"
+	},
+	"overrides": {
+		"ajv": "^8.18.0",
+    "koa": "^2.16.2",
+		"minimatch": "^10.2.1"
+  }
+}
