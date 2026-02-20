@@ -56,7 +56,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Upload dist files
+      - name: Remove stale dist
+        run: |
+          aws s3 rm ./dist/ s3://${{ secrets.S3_BUCKET }}/ --recursive
+          
+      - name: Upload fresh dist
         run: |
           aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --recursive
       
