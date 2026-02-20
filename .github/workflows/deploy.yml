@@ -17,6 +17,7 @@ on:
 
     paths-ignore:
       - public
+      - .github/**
       - .gitignore
       - .prettierignore
       - .prettierrc.json
