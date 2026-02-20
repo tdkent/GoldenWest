@@ -4,6 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "nuxt build",
+		"build-static": "npx nuxi generate",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
@@ -33,7 +34,7 @@
 	},
 	"overrides": {
 		"ajv": "^8.18.0",
-    "koa": "^2.16.2",
+		"koa": "^2.16.2",
 		"minimatch": "^10.2.1"
-  }
+	}
 }
