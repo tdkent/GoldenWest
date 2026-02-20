@@ -58,8 +58,8 @@ jobs:
 
       - name: Remove stale dist
         run: |
-          aws s3 rm ./dist/ s3://${{ secrets.S3_BUCKET }}/ --recursive
-          
+          aws s3 rm s3://${{ secrets.S3_BUCKET }}/ --recursive
+
       - name: Upload fresh dist
         run: |
           aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --recursive
