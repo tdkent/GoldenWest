@@ -45,3 +45,5 @@ export const dayTwoBriefDateString = dayTwoDate.toLocaleDateString(
 	briefDateOptions
 );
 export const dayTwoDayOfWeek = weekday[dayTwoDate.getDay()];
+
+export const currentYear = new Date().getFullYear();
