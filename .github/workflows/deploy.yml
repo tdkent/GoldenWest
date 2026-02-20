@@ -1,0 +1,38 @@
+### RUN ON:
+# Push to main branch (after PR merge).
+
+### JOBS:
+# format:
+# 1. Run prettier
+# deploy:
+# 1. Generate build files.
+# 2. Provide AWS credentials
+# 3. Push build files to S3
+# 4. Invalidate CloudFront distribution cache
+
+name: 'Deploy Application'
+
+on:
+  push:
+    branches:
+      - main
+
+    paths-ignore:
+      - public
+      - .gitignore
+      - .prettierignore
+      - .prettierrc.json
+      - README.md
+
+  workflow_dispatch:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Format code
+        run: npm run prettier
