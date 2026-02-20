@@ -27,7 +27,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  format:
+  deploy:
     runs-on: ubuntu-latest
 
     permissions:
