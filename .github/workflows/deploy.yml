@@ -2,8 +2,6 @@
 # Push to main branch (after PR merge).
 
 ### JOBS:
-# format:
-# 1. Run prettier
 # deploy:
 # 1. Generate build files.
 # 2. Provide AWS credentials
@@ -34,5 +32,17 @@ jobs:
       contents: read
 
     steps:
-      - name: Format code
-        run: npm run prettier
+      - name: Get code
+        uses: actions/checkout@v6
+
+      - name: Cache deps
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: deps-node-module-${{ hashFiles('**/package-lock.json') }}
+      
+      - name: Install deps
+        run: npm ci
+
+      - name: Build app
+        run: npm run build-static
