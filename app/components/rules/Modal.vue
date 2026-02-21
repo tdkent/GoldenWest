@@ -9,12 +9,12 @@
 </script>
 
 <template>
-		<NuxtLink
-			role="button"
-			class="link my-2 block font-semibold"
-			@click="isOpen = true"
-			>View 3x5 card format example</NuxtLink
-		>
+	<NuxtLink
+		role="button"
+		class="link my-2 block font-semibold"
+		@click="isOpen = true"
+		>View 3x5 card format example</NuxtLink
+	>
 	<MainModal
 		v-model="isOpen"
 		:header="CARD_MODAL_HEADER"

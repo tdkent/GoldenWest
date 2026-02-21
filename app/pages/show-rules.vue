@@ -23,18 +23,19 @@
 
 <template>
 	<div class="main-content relative">
-		<h2>Rules &amp; Regulations</h2>
+		<h2>Show Rules</h2>
 		<RulesBackToTop
 			v-if="viewport.isLessThan('lg')"
 			:show="showButton" />
 		<div ref="intersectPoint" />
-		<RulesMobileSubNav v-if="viewport.isLessThan('lg')" />
-		<div class="lg:grid lg:grid-cols-4 lg:gap-8">
+		<!-- <RulesMobileSubNav v-if="viewport.isLessThan('lg')" /> -->
+		<!-- <div class="lg:grid lg:grid-cols-4 lg:gap-8"> -->
+		<div>
 			<RulesContent class="lg:col-span-3" />
-			<RulesDesktopSubNav
+			<!-- <RulesDesktopSubNav
 				v-if="viewport.isGreaterOrEquals('lg')"
 				:show="showButton"
-				class="lg:col-span-1" />
+				class="lg:col-span-1" /> -->
 		</div>
 	</div>
 </template>
