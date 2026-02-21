@@ -4,7 +4,7 @@
 			{
 				name: 'description',
 				content:
-					'',
+					'Description, show rules and location information for the Golden West Model Horse Show Region 2 Championship in November, 2026.',
 			},
 		],
 		htmlAttrs: {

@@ -13,7 +13,9 @@
 			</span>
 		</template>
 		<template v-else>
-			<span class="gold-gradient text-4xl">Golden West Model Horse Show Region 2 Championship</span>
+			<span class="gold-gradient text-4xl"
+				>Golden West Model Horse Show Region 2 Championship</span
+			>
 		</template>
 	</h1>
 </template>
