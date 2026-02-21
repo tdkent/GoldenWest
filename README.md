@@ -1,4 +1,4 @@
-# Gold Country Model Horse Show
+# Golden West Model Horse Show Region 2 Championship
 
 ## Project Description
 

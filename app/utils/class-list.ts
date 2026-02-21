@@ -1,5 +1,5 @@
 // Internal Imports
-import { class_list } from '../app/data/db/db.json';
+import { class_list } from '../data/db/db.json';
 import type { ClassListRing, AccordionItem, Division } from '~/models';
 
 // Filter by day

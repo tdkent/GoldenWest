@@ -25,7 +25,7 @@
 		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
 	}
 	.show-rules {
-		@apply px-8 md:px-16 lg:px-32;
+		@apply px-8 md:px-16 lg:pl-32 lg:pr-60;
 	}
 	.show-rules li {
 		@apply list-disc py-2 marker:text-blue-500;

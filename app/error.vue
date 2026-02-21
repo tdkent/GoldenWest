@@ -21,7 +21,7 @@
 			<div class="mt-20 flex flex-col items-center">
 				<ExclamationTriangleIcon class="inline size-12 stroke-red-200" />
 				<p class="mt-4 overflow-hidden text-clip">
-					{{ error.statusMessage || 'An unknown error occurred' }}
+					{{ error.message || 'An unknown error occurred' }}
 				</p>
 			</div>
 		</div>
