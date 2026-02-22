@@ -3,10 +3,10 @@
 	import {
 		dayOneDayOfWeek,
 		dayTwoDayOfWeek,
-		startDayData,
-		endDayData,
-		startDayAccordionItems,
-		endDayAccordionItems,
+		// startDayData,
+		// endDayData,
+		// startDayAccordionItems,
+		// endDayAccordionItems,
 	} from '#imports';
 	// Metadata
 	useHead({
@@ -19,7 +19,7 @@
 		<h2>Class List</h2>
 		<section>
 			<UDivider :label="dayOneDayOfWeek" />
-			<UAccordion
+			<!-- <UAccordion
 				multiple
 				color="black"
 				variant="ghost"
@@ -35,11 +35,11 @@
 							startDayData.filter((r) => r.ring_title == item.label.slice(9))
 						" />
 				</template>
-			</UAccordion>
+			</UAccordion> -->
 		</section>
 		<section>
 			<UDivider :label="dayTwoDayOfWeek" />
-			<UAccordion
+			<!-- <UAccordion
 				multiple
 				color="black"
 				variant="ghost"
@@ -55,7 +55,7 @@
 							endDayData.filter((r) => r.ring_title === item.label.slice(9))
 						" />
 				</template>
-			</UAccordion>
+			</UAccordion> -->
 		</section>
 	</div>
 </template>
