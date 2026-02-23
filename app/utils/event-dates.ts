@@ -33,7 +33,7 @@ export const dayOneBriefDateString = dayOneDate.toLocaleDateString(
 	'en-US',
 	briefDateOptions
 );
-export const dayOneDayOfWeek = weekday[dayOneDate.getDay()];
+export const dayOneDayOfWeek = weekday[dayOneDate.getDay()] as string;
 
 // Format second day
 export const dayTwoLongDateString = dayTwoDate.toLocaleDateString(
@@ -44,6 +44,6 @@ export const dayTwoBriefDateString = dayTwoDate.toLocaleDateString(
 	'en-US',
 	briefDateOptions
 );
-export const dayTwoDayOfWeek = weekday[dayTwoDate.getDay()];
+export const dayTwoDayOfWeek = weekday[dayTwoDate.getDay()] as string;
 
 export const currentYear = new Date().getFullYear();

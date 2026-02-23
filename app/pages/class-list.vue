@@ -8,54 +8,39 @@
 		// startDayAccordionItems,
 		// endDayAccordionItems,
 	} from '#imports';
-	// Metadata
+	
 	useHead({
 		title: 'Class List',
 	});
+
+	const days = [
+		{
+			id: 1,
+			date: dayOneDayOfWeek,
+			columns: [
+				{ label: 'Breed Class#', key: 'breedId' },
+				{ label: 'Collect. Class#', key: 'collectId' },
+				{ label: 'Name', key: 'name' },
+			],
+		},
+		{
+			id: 2,
+			date: dayTwoDayOfWeek,
+			columns: [
+				{ label: 'Class#', key: 'id' },
+				{ label: 'Name', key: 'name' },
+			],
+		},
+	];
+
 </script>
 
 <template>
 	<div class="main-content">
 		<h2>Class List</h2>
-		<section>
-			<UDivider :label="dayOneDayOfWeek" />
-			<!-- <UAccordion
-				multiple
-				color="black"
-				variant="ghost"
-				size="xl"
-				class="inner-padding my-4 lg:my-8"
-				:items="startDayAccordionItems">
-				<template #ring-data="{ item }">
-					<UDivider
-						class="px-6 pt-0"
-						:ui="{ border: { base: 'dark:border-blue-700' } }" />
-					<ClassListRingData
-						:data="
-							startDayData.filter((r) => r.ring_title == item.label.slice(9))
-						" />
-				</template>
-			</UAccordion> -->
-		</section>
-		<section>
-			<UDivider :label="dayTwoDayOfWeek" />
-			<!-- <UAccordion
-				multiple
-				color="black"
-				variant="ghost"
-				size="xl"
-				class="inner-padding my-4 lg:my-8"
-				:items="endDayAccordionItems">
-				<template #ring-data="{ item }">
-					<UDivider
-						class="px-6 pt-0"
-						:ui="{ border: { base: 'dark:border-blue-700' } }" />
-					<ClassListRingData
-						:data="
-							endDayData.filter((r) => r.ring_title === item.label.slice(9))
-						" />
-				</template>
-			</UAccordion> -->
+		<section v-for="day of days.sort((a, b) => a.id - b.id)">
+			<UDivider :label="day.date" />
+			<ClassListData :day="day.id" :columns="day.columns" />
 		</section>
 	</div>
 </template>
