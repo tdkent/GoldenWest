@@ -18,55 +18,80 @@
 			division,
 		}))
 	);
+
+	const columns = [
+		{ label: 'Breed#', key: 'breedId' },
+		{ label: 'Collect#', key: 'collectId' },
+		{ label: 'Name', key: 'name' },
+	];
 </script>
 
 <template>
 	<div v-if="pending">Loading...</div>
 	<div v-else-if="error">Error loading data</div>
-	<div v-else class="w-full">
+	<div
+		v-else
+		class="w-full">
 		<UAccordion
 			color="black"
 			variant="ghost"
 			size="lg"
-			class=" my-4 lg:my-8"
+			class="my-4 lg:my-8"
 			:items="accordionItems">
 			<template #ring-data="{ item }">
 				<UDivider
 					class="px-6 pt-0"
 					:ui="{ border: { base: 'dark:border-blue-700' } }" />
 				<div>
-					
 					<p
 						v-if="item.division.notes"
-						class="text-sm">
-						Please note: {{ item.division.notes }}
+						class="mb-8 px-4 text-sm">
+						Note: {{ item.division.notes }}
 					</p>
 
 					<div
 						v-for="section in item.division.sections"
-						:key="section.id"
-						>
-						
+						:key="section.id">
 						<div class="px-4">{{ section.name }}</div>
 
 						<p
 							v-if="section.notes"
-							class="text-sm">
-							{{ section.notes }}
+							class="my-8 px-4 text-sm">
+							Note: {{ section.notes }}
 						</p>
 
-					<div class="mt-2">
-						<UTable
-							:rows="section.classes"
-						/>
+						<div class="my-4">
+							<UTable
+								:columns="columns"
+								:rows="section.classes" />
+						</div>
+
+						<div class="mb-8 mt-4 flex items-center gap-1 px-2">
+							<img
+								alt="Small ribbon icon"
+								role="img"
+								class="h-6 w-6 lg:h-7 lg:w-7"
+								src="~/assets/icon/FluentRibbon20Regular.svg" />
+							{{ section.ribbon }}
+						</div>
+
+						<UDivider
+							class="px-6 pt-0"
+							:ui="{ border: { base: 'dark:border-blue-700' } }" />
 					</div>
 
-						<div>Ribbon: {{ section.ribbon }}</div>
-
-					</div>
-
-					<div v-for="ribbon in item.division.divRibbons" :key="ribbon">
-						{{ ribbon }}
+					<div class="flex flex-col gap-4 px-2">
+						<div
+							v-for="ribbon in item.division.divRibbons"
+							:key="ribbon"
+							class="flex items-center gap-1">
+							<img
+								alt="Small ribbon icon"
+								role="img"
+								class="h-6 w-6 lg:h-7 lg:w-7"
+								src="~/assets/icon/FluentRibbonStar20Regular.svg" />
+							{{ ribbon }}
+						</div>
 					</div>
 				</div>
 			</template>
