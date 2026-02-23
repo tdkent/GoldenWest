@@ -1,7 +1,7 @@
-import type { Division } from "~/types/class-list.types"
+import type { Division } from '~/types/class-list.types';
 
 export interface AccordionItem {
-  label: string
-  slot: 'ring-data'
-  division: Division
+	label: string;
+	slot: 'ring-data';
+	division: Division;
 }

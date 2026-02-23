@@ -14,7 +14,7 @@ export interface Section {
 	name: string;
 	notes: string;
 	ribbon: string;
-	classes: (Day1Class | Day2Class)[];
+	classes: Day1Class[] | Day2Class[];
 }
 
 export interface Division {

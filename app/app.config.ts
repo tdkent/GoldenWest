@@ -3,13 +3,13 @@ export default defineAppConfig({
 		primary: 'blue',
 		accordion: {
 			container:
-				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900 dark:bg-blue-900 dark:text-blue-100 dark:border-blue-600',
+				'border border-blue-100 bg-blue-50 my-4 rounded-none text-blue-900 dark:bg-blue-900 dark:text-blue-100 dark:border-blue-600 min-w-0',
 			item: {
 				color: 'text-blue-900 dark:text-blue-100 lg:text-base',
 				padding: 'py-8',
 			},
 			default: {
-				class: 'py-4 text-sm lg:text-lg',
+				class: 'p-2 text-xs lg:text-lg',
 				openIcon: 'i-heroicons-chevron-left-20-solid',
 				closeIcon: 'i-heroicons-chevron-down-20-solid',
 			},
@@ -31,14 +31,14 @@ export default defineAppConfig({
 		},
 		table: {
 			th: {
-				base: 'w-1/2 text-left bg-blue-50 dark:bg-blue-900',
+				base: 'text-left bg-blue-50 dark:bg-blue-900',
 				color: 'text-blue-900 dark:text-blue-100',
-				font: 'uppercase text-sm',
+				font: 'uppercase text-xs',
 			},
 			td: {
-				base: 'whitespace-normal w-1/2 text-left',
+				base: 'whitespace-normal text-left',
 				color: 'text-gray-800 dark:text-gray-100',
-				font: 'text-sm',
+				font: 'text-xs',
 			},
 		},
 		divider: {
