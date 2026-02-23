@@ -1,14 +1,9 @@
 <script setup lang="ts">
-	// Internal Imports
 	import {
 		dayOneDayOfWeek,
 		dayTwoDayOfWeek,
-		// startDayData,
-		// endDayData,
-		// startDayAccordionItems,
-		// endDayAccordionItems,
 	} from '#imports';
-	
+
 	useHead({
 		title: 'Class List',
 	});
@@ -32,7 +27,6 @@
 			],
 		},
 	];
-
 </script>
 
 <template>
@@ -40,7 +34,9 @@
 		<h2>Class List</h2>
 		<section v-for="day of days.sort((a, b) => a.id - b.id)">
 			<UDivider :label="day.date" />
-			<ClassListData :day="day.id" :columns="day.columns" />
+			<ClassListData
+				:day="day.id"
+				:columns="day.columns" />
 		</section>
 	</div>
 </template>
