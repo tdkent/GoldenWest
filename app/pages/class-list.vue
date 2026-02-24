@@ -29,7 +29,7 @@
 <template>
 	<div class="main-content">
 		<h2>Class List</h2>
-		<p class="my-2 text-center md:text-lg">
+		<p class="mt-8 text-center font-serif text-lg md:text-xl">
 			Note: "LC" means "Last Chance" or unqualified models class.
 		</p>
 		<section v-for="day of days.sort((a, b) => a.id - b.id)">

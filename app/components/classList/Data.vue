@@ -24,7 +24,6 @@
 			label: division.divNames.join(', '),
 			slot: 'ring-data',
 			division,
-			closeOthers: true,
 		}))
 	);
 </script>
@@ -52,7 +51,7 @@
 				:items="accordionItems">
 				<template #ring-data="{ item }">
 					<UDivider
-						class="px-6 pt-0"
+						class="px-6 pt-0 md:pt-0"
 						:ui="{ border: { base: 'dark:border-blue-700' } }" />
 					<div>
 						<p

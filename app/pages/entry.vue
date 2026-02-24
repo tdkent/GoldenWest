@@ -1,26 +1,25 @@
 <script setup lang="ts">
-	import { DocumentTextIcon } from '@heroicons/vue/24/outline';
 	useHead({ title: 'Entry Form' });
+	const viewport = useViewport();
 </script>
 
 <template>
 	<div class="main-content">
-		<h2>Entry</h2>
+		<h2>Entry Form</h2>
 		<section>
 			<UDivider />
-			<div class="inner-padding">
+			<div class="show-rules">
 				<p>Please fill out and submit the form below:</p>
-				<div class="flex items-center gap-2">
-					<DocumentTextIcon class="my-6 size-6 stroke-1" />
-					<NuxtLink
-						to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
-						target="_blank"
-						rel="noopener"
-						class="link text-lg font-bold">
-						Google Docs Entry Form
-					</NuxtLink>
-				</div>
-				<p class="mt-6">Your entry form should be submitted in two parts:</p>
+				<UButton
+					label="Google Docs Entry Form"
+					icon="i-heroicons-document-text"
+					:size="viewport.isLessThan('md') ? 'lg':'xl'"
+					variant="outline"
+					class="my-10 ml-2 font-semibold transition-all duration-200 text-sm hover:scale-110 lg:my-12"
+					to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
+					target="_blank"
+					rel="noopener" />
+				<p>Your entry form should be submitted in two parts:</p>
 				<ol class="flex list-inside list-decimal flex-col gap-4 p-4">
 					<li>
 						Please submit your table reservation

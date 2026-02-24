@@ -4,5 +4,4 @@ export interface AccordionItem {
 	label: string;
 	slot: 'ring-data';
 	division: Division;
-	closeOthers: boolean;
 }

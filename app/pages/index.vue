@@ -18,6 +18,7 @@
 			'Breyer/Other Breed Division (Traditional & Classic sizes), Breyer/Other Collectability Division (Traditional & Classic)',
 			'Breyer/Other Breed Division (Mini sizes), Breyer/Other Collectability Division (Mini sizes)',
 			'Hartland Sub-Division - Breed and Collectability',
+			'Stone Breed Division (Traditional), Stone Collectability Division (Traditional)',
 			'Stone Mini Breed Division, Stone Mini Collectability Division',
 			'OF China/Resin Division, OF China/Resin Collectability Division',
 		],
@@ -82,17 +83,17 @@
 			</div>
 		</section>
 
-		<section class="">
+		<section>
 			<UDivider label="Divisions" />
 			<div
-				class="my-4 flex w-full flex-col items-center gap-12 py-4 lg:gap-20 lg:py-8">
+				class="my-4 flex w-full max-w-lg flex-col items-center gap-12 py-4 lg:gap-20 lg:py-8">
 				<div class="flex flex-col items-center gap-4">
 					<span
 						class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
 						Saturday
 					</span>
 
-					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm">
+					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
 						<li
 							v-for="div in divisions.day1"
 							class="pt-3">
@@ -107,7 +108,7 @@
 						Sunday
 					</span>
 
-					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm">
+					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
 						<li
 							v-for="div in divisions.day2"
 							class="pt-3">
