@@ -77,7 +77,7 @@
 									:rows="section.classes" />
 							</div>
 
-							<div class="mb-8 mt-4 flex items-center gap-1 px-2">
+							<div v-if="section.ribbon" class="mb-8 mt-4 flex items-center gap-1 px-2">
 								<img
 									alt="Small ribbon icon"
 									role="img"
