@@ -9,7 +9,7 @@ export default defineAppConfig({
 				padding: 'py-8',
 			},
 			default: {
-				class: 'p-2 text-xs lg:text-lg',
+				class: 'p-2 text-xs md:p-4 md:text-lg',
 				openIcon: 'i-heroicons-chevron-left-20-solid',
 				closeIcon: 'i-heroicons-chevron-down-20-solid',
 			},
@@ -33,12 +33,12 @@ export default defineAppConfig({
 			th: {
 				base: 'text-left bg-blue-50 dark:bg-blue-900',
 				color: 'text-blue-900 dark:text-blue-100',
-				font: 'uppercase text-xs',
+				font: 'uppercase text-xs md:text-sm',
 			},
 			td: {
 				base: 'whitespace-normal text-left',
 				color: 'text-gray-800 dark:text-gray-100',
-				font: 'text-xs',
+				font: 'text-xs md:text-sm',
 			},
 		},
 		divider: {

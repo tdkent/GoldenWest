@@ -24,6 +24,7 @@
 			label: division.divNames.join(', '),
 			slot: 'ring-data',
 			division,
+			closeOthers: true
 		}))
 	);
 </script>
@@ -56,18 +57,18 @@
 					<div>
 						<p
 							v-if="item.division.notes"
-							class="mb-8 px-4 text-sm">
+							class="mb-8 px-4 text-sm md:text-base">
 							Note: {{ item.division.notes }}
 						</p>
 
 						<div
 							v-for="section in item.division.sections"
 							:key="section.id">
-							<div class="px-4">{{ section.name }}</div>
+							<div class="px-4 md:text-lg">{{ section.name }}</div>
 
 							<p
 								v-if="section.notes"
-								class="my-8 px-4 text-sm">
+								class="my-8 px-4 text-sm md:text-base">
 								Note: {{ section.notes }}
 							</p>
 
@@ -77,7 +78,7 @@
 									:rows="section.classes" />
 							</div>
 
-							<div v-if="section.ribbon" class="mb-8 mt-4 flex items-center gap-1 px-2">
+							<div v-if="section.ribbon" class="mb-8 mt-4 flex items-center gap-1 px-2 md:text-lg md:gap-2">
 								<img
 									alt="Small ribbon icon"
 									role="img"
@@ -95,7 +96,7 @@
 							<div
 								v-for="ribbon in item.division.divRibbons"
 								:key="ribbon"
-								class="flex items-center gap-1">
+								class="flex items-center gap-1 md:text-lg md:gap-2">
 								<img
 									alt="Small ribbon icon"
 									role="img"
