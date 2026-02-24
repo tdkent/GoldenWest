@@ -35,8 +35,11 @@
 		<ClassListLoading
 			v-if="pending"
 			class="flex w-full flex-col gap-4" />
-
-		<div v-else-if="error">Error loading data</div>
+		<p
+			v-else-if="error"
+			class="text-red-500 p-4">
+			An error occurred while trying to fetch the class list. Please try again.
+		</p>
 		<div
 			v-else
 			class="w-full">

@@ -1,8 +1,5 @@
 <script setup lang="ts">
-	import {
-		dayOneDayOfWeek,
-		dayTwoDayOfWeek,
-	} from '#imports';
+	import { dayOneDayOfWeek, dayTwoDayOfWeek } from '#imports';
 
 	useHead({
 		title: 'Class List',
