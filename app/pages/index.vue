@@ -16,30 +16,54 @@
 
 <template>
 	<div class="main-content">
-		<section>
-			<!-- Event Dates -->
-			<div
-				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-6 lg:gap-y-4 lg:py-8">
-				<span
-					class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
-					Event Dates
-				</span>
-				<p class="font-serif text-2xl lg:text-3xl">
-					{{ dayOneLongDateString }}
-				</p>
-				<p class="font-serif text-2xl lg:text-3xl">
-					{{ dayTwoLongDateString }}
-				</p>
-				<UButton
-					label="Register Now"
-					size="lg"
-					variant="outline"
-					class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110 lg:mt-6"
-					to="/entry" />
+		<section
+			class="my-16 flex w-full flex-col gap-12 lg:gap-4 lg:py-8">
+			<div class="flex flex-col items-center gap-4">
+			<span
+				class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+				Event Dates
+			</span>
+			<div class="text-center">
+			<p class="font-serif text-2xl lg:text-3xl">
+				{{ dayOneLongDateString }}
+			</p>
+			<p class="font-serif text-2xl lg:text-3xl">
+				{{ dayTwoLongDateString }}
+			</p>
 			</div>
-			<div class="inner-padding flex w-full flex-col gap-y-6 lg:gap-y-8">
+			<UButton
+				label="Register Now"
+				size="lg"
+				variant="outline"
+				class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110 lg:mt-6"
+				to="/entry" />
+</div>
+<div class="flex flex-col items-center gap-4">
+			<span
+				class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+				Location
+			</span>
+			<p class="font-serif text-xl lg:text-3xl text-center">
+				Davis Senior Center
+				<span class="block">646 A St, Davis, CA 95616</span>
+			</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+			<span
+				class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+				Show Times
+			</span>
+
+			<ul class="font-serif text-center text-lg">
+				<li>Doors Open: 8 AM</li>
+				<li>Show Starts: 9 AM</li>
+				<li>Lunch: 12:30 PM (approx.)</li>
+				<li>Show End: 5-6 PM</li>
+			</ul>
+</div>
+			<!-- <div class="inner-padding flex w-full flex-col gap-y-6 lg:gap-y-8"> -->
 				<!-- Location -->
-				<div class="info-box flex min-h-20 justify-between">
+				<!-- <div class="info-box flex min-h-20 justify-between">
 					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<BuildingLibraryIcon class="icon-blue h-5 w-5" />
@@ -49,9 +73,9 @@
 					<div class="flex w-1/2 items-center text-left text-sm">
 						<p>646 A St, Davis, CA 95616</p>
 					</div>
-				</div>
+				</div> -->
 				<!-- Show Times -->
-				<div class="info-box flex min-h-20 justify-between">
+				<!-- <div class="info-box flex min-h-20 justify-between">
 					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<ClockIcon class="icon-blue h-5 w-5" />
@@ -64,8 +88,8 @@
 						<p>Lunch: 12:30 PM (approx.)</p>
 						<p>Show End: between 5-6 PM</p>
 					</div>
-				</div>
-			</div>
+				</div> -->
+			<!-- </div> -->
 		</section>
 		<!-- DIVISIONS -->
 		<section class="mb-4 mt-8">
@@ -81,9 +105,14 @@
 					:data="dayTwoTableRows"
 					:day="dayTwoDayOfWeek" /> -->
 			</div>
+						<UButton
+				label="Register Now"
+				size="lg"
+				variant="outline"
+				class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110 lg:mt-6"
+				to="/entry" />
 		</section>
-		<!-- INFO -->
-		<section>
+		<!-- <section>
 			<UDivider label="Event Info" />
 			<div class="inner-padding">
 				<h3 class="mt-4">NAMHSA</h3>
@@ -122,6 +151,6 @@
 					us know if you have items you would like to donate to the raffle.
 				</p>
 			</div>
-		</section>
+		</section> -->
 	</div>
 </template>
