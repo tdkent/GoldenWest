@@ -61,4 +61,13 @@
 	.splash-slide {
 		@apply absolute h-full w-full object-cover;
 	}
+
+	/* Override NuxtUI's jank Accordion styling */
+	button > span.line-clamp-1 {
+		@apply line-clamp-none;
+	}
+
+	button > span.break-all {
+		@apply break-normal;
+	}
 }

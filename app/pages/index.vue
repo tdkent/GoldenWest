@@ -4,9 +4,9 @@
 	// Internal Imports
 	import {
 		dayOneDayOfWeek,
-		dayOneTableRows,
+		// dayOneTableRows,
 		dayTwoDayOfWeek,
-		dayTwoTableRows,
+		// dayTwoTableRows,
 	} from '#imports';
 	// Metadata
 	useHead({
@@ -73,13 +73,13 @@
 			<div
 				class="inner-padding my-4 flex w-full flex-col items-center gap-y-6 lg:gap-y-8">
 				<!-- Saturday -->
-				<HomeDivisionTable
+				<!-- <HomeDivisionTable
 					:data="dayOneTableRows"
-					:day="dayOneDayOfWeek" />
+					:day="dayOneDayOfWeek" /> -->
 				<!-- Sunday -->
-				<HomeDivisionTable
+				<!-- <HomeDivisionTable
 					:data="dayTwoTableRows"
-					:day="dayTwoDayOfWeek" />
+					:day="dayTwoDayOfWeek" /> -->
 			</div>
 		</section>
 		<!-- INFO -->

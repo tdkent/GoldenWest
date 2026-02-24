@@ -1,10 +1,5 @@
 // Imports
 import { z } from 'zod';
-// Division list
-export type Division = {
-	name: string;
-	judge: string;
-};
 
 // Restaurant, hotel list items
 export type ListItem = {
@@ -18,12 +13,6 @@ export type ListItem = {
 export type VenueList = {
 	label: string;
 	items: ListItem[];
-};
-
-// Class list accordion
-export type AccordionItem = {
-	label: string;
-	slot: string;
 };
 
 // Class list types
