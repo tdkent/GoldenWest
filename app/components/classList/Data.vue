@@ -24,7 +24,7 @@
 			label: division.divNames.join(', '),
 			slot: 'ring-data',
 			division,
-			closeOthers: true
+			closeOthers: true,
 		}))
 	);
 </script>
@@ -38,7 +38,7 @@
 			class="flex w-full flex-col gap-4" />
 		<p
 			v-else-if="error"
-			class="text-red-500 p-4">
+			class="p-4 text-red-500">
 			An error occurred while trying to fetch the class list. Please try again.
 		</p>
 		<div
@@ -78,7 +78,9 @@
 									:rows="section.classes" />
 							</div>
 
-							<div v-if="section.ribbon" class="mb-8 mt-4 flex items-center gap-1 px-2 md:text-lg md:gap-2">
+							<div
+								v-if="section.ribbon"
+								class="mb-8 mt-4 flex items-center gap-1 px-2 md:gap-2 md:text-lg">
 								<img
 									alt="Small ribbon icon"
 									role="img"
@@ -96,7 +98,7 @@
 							<div
 								v-for="ribbon in item.division.divRibbons"
 								:key="ribbon"
-								class="flex items-center gap-1 md:text-lg md:gap-2">
+								class="flex items-center gap-1 md:gap-2 md:text-lg">
 								<img
 									alt="Small ribbon icon"
 									role="img"
