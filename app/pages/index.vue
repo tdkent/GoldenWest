@@ -93,7 +93,8 @@
 						Saturday
 					</span>
 
-					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
+					<ul
+						class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
 						<li
 							v-for="div in divisions.day1"
 							class="pt-3">
@@ -108,7 +109,8 @@
 						Sunday
 					</span>
 
-					<ul class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
+					<ul
+						class="flex flex-col gap-4 divide-y divide-gray-700 text-sm md:text-base">
 						<li
 							v-for="div in divisions.day2"
 							class="pt-3">
