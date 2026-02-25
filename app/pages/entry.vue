@@ -13,9 +13,9 @@
 				<UButton
 					label="Google Docs Entry Form"
 					icon="i-heroicons-document-text"
-					:size="viewport.isLessThan('md') ? 'lg':'xl'"
+					:size="viewport.isLessThan('md') ? 'lg' : 'xl'"
 					variant="outline"
-					class="my-10 ml-2 font-semibold transition-all duration-200 text-sm hover:scale-110 lg:my-12"
+					class="my-10 ml-2 text-sm font-semibold transition-all duration-200 hover:scale-110 lg:my-12"
 					to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
 					target="_blank"
 					rel="noopener" />

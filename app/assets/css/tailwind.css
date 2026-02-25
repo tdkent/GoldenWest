@@ -40,7 +40,7 @@
 		@apply fill-blue-200 stroke-blue-900 dark:fill-gray-700 dark:stroke-blue-100;
 	}
 	.link {
-		@apply border-b-2 border-dotted py-0.5 border-teal-600 hover:text-teal-600 dark:border-teal-400 dark:hover:text-teal-400;
+		@apply border-b-2 border-dotted border-teal-600 py-0.5 hover:text-teal-600 dark:border-teal-400 dark:hover:text-teal-400;
 	}
 	div.input-required label,
 	div.legend-required legend {
