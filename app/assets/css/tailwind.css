@@ -33,30 +33,11 @@
 	.show-rules li > ul > li {
 		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
 	}
-	.info-box {
-		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900 dark:bg-blue-900 dark:text-blue-100;
-	}
-	.icon-blue {
-		@apply fill-blue-200 stroke-blue-900 dark:fill-gray-700 dark:stroke-blue-100;
-	}
 	.link {
 		@apply border-b-2 border-dotted border-teal-600 py-0.5 hover:text-teal-600 dark:border-teal-400 dark:hover:text-teal-400;
 	}
-	div.input-required label,
-	div.legend-required legend {
-		@apply after:ml-0.5 after:text-red-600 after:content-['*'] dark:after:text-red-400;
-	}
-	.reg-details p {
-		@apply font-medium;
-	}
-	.reg-details span {
-		@apply font-normal;
-	}
 	.main-content {
 		@apply mx-auto max-w-screen-lg;
-	}
-	.inner-padding {
-		@apply sm:px-2 md:px-8 lg:px-32;
 	}
 	.splash-slide {
 		@apply absolute h-full w-full object-cover;

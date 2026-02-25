@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
-	
+
 	useHead({
 		title: 'Home',
 	});
