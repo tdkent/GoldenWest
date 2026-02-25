@@ -36,6 +36,9 @@ export default defineNuxtConfig({
 			'Mate SC': [400],
 			'Cormorant Garamond': [400],
 			'Urbanist': [300]
-		}
+		},
+		preload: true,
+		subsets: 'latin',
+		download: false
 	},
 })
