@@ -85,7 +85,7 @@
 							target="_blank"
 							rel="noopener"
 							to="https://namhsa.org"
-							class="link font-semibold">
+							class="link font-semibold p-0">
 							show results and verify your models eligibility</NuxtLink
 						>.
 					</li>

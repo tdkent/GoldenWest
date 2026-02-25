@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	// Imports
-	import { MapIcon } from '@heroicons/vue/24/outline';
+	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
 	// Metadata
 	useHead({
 		title: 'Venue & Lodging',
@@ -18,14 +18,13 @@
 					<span class="mt-4 block">Davis Senior Center</span>
 					<span class="block">646 A St, Davis, CA</span>
 				</p>
-				<div class="flex items-center gap-2">
-					<MapIcon class="size-5" />
+				<div class="flex items-center gap-1">
 					<NuxtLink
 						href="https://maps.app.goo.gl/JfvqLkyeedrV7HcB7"
 						target="_blank"
 						rel="noopener"
-						class="hover:text-teal-600 dark:hover:text-teal-400">
-						View location on map
+						class="link">
+						View on Google Maps
 					</NuxtLink>
 				</div>
 			</div>
