@@ -1,6 +1,11 @@
 <script setup lang="ts">
-	// Internal Imports
-	import { navLinks } from '~/data/nav';
+	import type { NavLink } from '~/types/types';
+
+	interface Props {
+		navLinks: NavLink[];
+	}
+
+	const { navLinks } = defineProps<Props>();
 </script>
 
 <template>

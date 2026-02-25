@@ -1,9 +1,13 @@
 <script setup lang="ts">
-	// Imports
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
-	// Internal Imports
-	import { navLinks } from '~/data/nav';
-	// State
+	import type { NavLink } from '~/types/types';
+
+	interface Props {
+		navLinks: NavLink[];
+	}
+
+	const { navLinks } = defineProps<Props>();
+
 	const isOpen = ref(false);
 </script>
 
