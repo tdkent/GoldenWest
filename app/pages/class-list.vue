@@ -29,6 +29,9 @@
 <template>
 	<div class="main-content">
 		<h2>Class List</h2>
+		<p class="mt-8 text-center font-serif text-lg md:text-xl">
+			Note: "LC" means "Last Chance" or unqualified models class.
+		</p>
 		<section v-for="day of days.sort((a, b) => a.id - b.id)">
 			<UDivider :label="day.date" />
 			<ClassListData

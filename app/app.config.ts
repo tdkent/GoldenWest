@@ -43,7 +43,7 @@ export default defineAppConfig({
 		},
 		divider: {
 			wrapper: {
-				base: 'py-8 flex items-center align-center text-center',
+				base: 'py-8 flex items-center align-center text-center md:py-12',
 			},
 			container: {
 				base: 'font-header',

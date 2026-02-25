@@ -1,29 +1,25 @@
 <script setup lang="ts">
 	useHead({ title: 'Entry Form' });
+	const viewport = useViewport();
 </script>
 
 <template>
-	<div class="main-content inner-padding">
-		<h2>Entry</h2>
+	<div class="main-content">
+		<h2>Entry Form</h2>
 		<section>
-			<UDivider label="Entry Form" />
-			<div class="inner-padding">
-				<p>
-					Please fill out and submit the
-					<NuxtLink
-						to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
-						target="_blank"
-						rel="noopener"
-						class="link font-semibold">
-						entry form (Google Docs)</NuxtLink
-					>
-				</p>
-			</div>
-		</section>
-		<section>
-			<UDivider label="Form Submission" />
-			<div class="inner-padding">
-				<p>Your Entry Forms should be submitted in two parts:</p>
+			<UDivider />
+			<div class="show-rules">
+				<p>Please fill out and submit the form below:</p>
+				<UButton
+					label="Google Docs Entry Form"
+					icon="i-heroicons-document-text"
+					:size="viewport.isLessThan('md') ? 'lg':'xl'"
+					variant="outline"
+					class="my-10 ml-2 font-semibold transition-all duration-200 text-sm hover:scale-110 lg:my-12"
+					to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
+					target="_blank"
+					rel="noopener" />
+				<p>Your entry form should be submitted in two parts:</p>
 				<ol class="flex list-inside list-decimal flex-col gap-4 p-4">
 					<li>
 						Please submit your table reservation

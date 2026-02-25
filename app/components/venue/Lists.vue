@@ -1,59 +1,80 @@
 <script setup lang="ts">
-	// Imports
-	import {
-		MapPinIcon,
-		PhoneIcon,
-		ArrowTopRightOnSquareIcon,
-	} from '@heroicons/vue/24/outline';
-	// Internal Imports
-	import venueLists from '~/data/venue';
+	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
+	import type { VenueList } from '~/types/venue.types';
+
+	const venueLists: VenueList[] = [
+		{
+			label: 'Nearby Restaurants',
+			items: [
+				{
+					name: 'Crepeville',
+					url: 'https://www.crepeville.com',
+				},
+				{
+					name: 'Guads Tacos & Beer',
+					url: 'https://guadsdavis.com',
+				},
+				{
+					name: "Shah's Halal Food (Truck)",
+					url: 'https://places.singleplatform.com/shahs-halal-food-5',
+				},
+				{
+					name: 'Taqueria Guadalajara',
+					url: 'https://tgtacos.com',
+				},
+			],
+		},
+		{
+			label: 'Nearby Hotels',
+			items: [
+				{
+					name: 'Aggie Inn',
+					url: null,
+				},
+				{
+					name: 'Best Western Palm Court',
+					url: 'https://www.bestwestern.com/en_US/book/hotels-in-davis/best-western-plus-palm-court-hotel/propertyCode.05536.html',
+				},
+				{
+					name: 'Econo Lodge Woodland',
+					url: null,
+				},
+				{
+					name: 'Hilton Garden Inn',
+					url: 'https://www.hilton.com/en/hotels/smfdagi-hilton-garden-inn-davis-downtown/',
+				},
+				{
+					name: 'Motel 6 Dixon',
+					url: 'https://www.motel6.com/property/motel-dixon-california-us-293718',
+				},
+			],
+		},
+	];
 </script>
 <template>
 	<section
 		v-for="list in venueLists"
 		:key="list.label">
 		<UDivider :label="list.label" />
-		<div
-			class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 md:py-8 lg:grid-cols-3 xl:grid-cols-3">
-			<div
+		<ul class="flex flex-col items-center divide-y-0 divide-gray-700">
+			<li
 				v-for="item in list.items"
 				:key="item.name"
-				class="flex h-40 flex-col justify-evenly rounded-2xl border px-6 transition-transform duration-300 md:h-60 md:border md:border-gray-200 md:px-6 md:shadow-[1px_1px_1px_0_rgba(0,0,0,0.3)] md:hover:scale-105 lg:h-64 lg:justify-between lg:py-6 dark:border-blue-900">
-				<h3
-					class="mt-0 text-sm normal-case text-blue-600 md:text-base lg:text-lg dark:text-blue-400">
-					{{ item.name }}
-				</h3>
-				<div class="flex flex-col gap-2 text-xs md:gap-4 md:text-sm">
-					<span class="flex items-center gap-4">
-						<PhoneIcon class="h-3 w-3 stroke-gray-500 lg:h-4 lg:w-4" />{{
-							item.phone
-						}}
-					</span>
-					<span class="flex items-center">
-						<MapPinIcon class="h-3 w-3 stroke-gray-500 lg:h-4 lg:w-4" />
-						<NuxtLink
-							target="_blank"
-							rel="noopener"
-							:to="item.mapUrl"
-							class="peer ml-4 hover:text-teal-600 dark:hover:text-teal-400">
-							{{ item.address }}
-						</NuxtLink>
-						<ArrowTopRightOnSquareIcon
-							class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
-					</span>
-				</div>
-				<span class="flex items-center text-xs">
+				class="w-full py-4">
+				<div
+					v-if="item.url"
+					class="flex items-center gap-3">
 					<NuxtLink
 						target="_blank"
 						rel="noopener"
-						:to="item.websiteUrl"
-						class="peer font-splash font-medium uppercase text-blue-600 hover:text-teal-600 dark:text-blue-400 dark:hover:text-teal-400">
-						Visit Website
+						:to="item.url"
+						class="hover:text-teal-600 dark:hover:text-teal-400">
+						{{ item.name }}
 					</NuxtLink>
-					<ArrowTopRightOnSquareIcon
-						class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
-				</span>
-			</div>
-		</div>
+					<ArrowTopRightOnSquareIcon class="size-4" />
+				</div>
+				<span v-else>{{ item.name }}</span>
+			</li>
+		</ul>
 	</section>
 </template>
