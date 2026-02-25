@@ -1,9 +1,10 @@
 <script setup lang="ts">
-	// Metadata
+
 	useHead({
 		title: 'Show Rules',
 	});
-	// Intersection API
+
+	// Use Intersection API to render "Back To Top" button
 	const intersectPoint: globalThis.Ref<Element | null> = ref(null);
 	const showButton = ref(false);
 	onMounted(() => {
@@ -17,7 +18,7 @@
 			} else showButton.value = false;
 		});
 	};
-	// Viewport
+
 	const viewport = useViewport();
 </script>
 

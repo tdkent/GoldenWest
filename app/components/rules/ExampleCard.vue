@@ -1,7 +1,6 @@
 <script setup lang="ts">
-	// Internal Imports
 	import { CARD_MODAL_HEADER } from '~/lib/constants';
-	// Modal
+	
 	const isOpen = ref(false);
 	function closeModal() {
 		isOpen.value = false;

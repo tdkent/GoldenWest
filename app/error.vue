@@ -1,15 +1,14 @@
 <script setup lang="ts">
-	// Imports
 	import type { NuxtError } from '#app';
 	import {
 		ExclamationTriangleIcon,
 		ArrowLeftIcon,
 	} from '@heroicons/vue/24/outline';
-	// Props
+	
 	defineProps({
 		error: { type: Object as () => NuxtError, required: true },
 	});
-	// Clear error
+	
 	function handleClearError() {
 		clearError({ redirect: '/' });
 	}

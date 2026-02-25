@@ -12,7 +12,6 @@
 </script>
 
 <template>
-	<!-- Open Slideover Button -->
 	<UButton
 		color="white"
 		variant="ghost"
@@ -23,7 +22,7 @@
 		@click="isOpen = true">
 		<Bars3Icon class="h-8 w-8 stroke-gray-900 dark:stroke-gray-100" />
 	</UButton>
-	<!-- Slideover -->
+	
 	<USlideover v-model="isOpen">
 		<div>
 			<UButton
