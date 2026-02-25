@@ -24,7 +24,7 @@
 <template>
 	<div class="main-content relative">
 		<h2>Show Rules</h2>
-		<RulesBackToTop
+		<SharedBackToTop
 			v-if="viewport.isLessThan('lg')"
 			:show="showButton" />
 		<div ref="intersectPoint" />

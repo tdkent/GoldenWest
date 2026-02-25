@@ -18,7 +18,7 @@
 						The class number, breed, and gender of the horse go on the front of
 						the card. Please place this side up when you show. Shower's name and
 						horse's name go on the back of the card.
-						<RulesModal />
+						<RulesExampleCard />
 					</li>
 					<li>
 						<strong>Five</strong> models are allowed per class except for no
