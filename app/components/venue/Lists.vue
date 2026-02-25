@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import type { VenueList } from '~/types/types';
+	import type { VenueList } from '~/lib/types';
 
 	const venueLists: VenueList[] = [
 		{

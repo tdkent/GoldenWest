@@ -1,6 +1,6 @@
 <script setup lang="ts">
-	import { API_URL } from '~/constants';
-	import type { AccordionItem, Division } from '~/types/types';
+	import { API_URL } from '~/lib/constants';
+	import type { AccordionItem, Division } from '~/lib/types';
 
 	interface Props {
 		day: number;

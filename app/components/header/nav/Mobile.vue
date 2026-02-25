@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
-	import type { NavLink } from '~/types/types';
+	import type { NavLink } from '~/lib/types';
 
 	interface Props {
 		navLinks: NavLink[];

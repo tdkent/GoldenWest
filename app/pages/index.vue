@@ -1,14 +1,6 @@
 <script setup lang="ts">
-	// Imports
-	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
-	// Internal Imports
-	import {
-		dayOneDayOfWeek,
-		// dayOneTableRows,
-		dayTwoDayOfWeek,
-		// dayTwoTableRows,
-	} from '#imports';
-	// Metadata
+	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
+	
 	useHead({
 		title: 'Home',
 	});

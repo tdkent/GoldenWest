@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import type { NavLink } from '~/types/types';
+	import type { NavLink } from '~/lib/types';
 
 	interface Props {
 		navLinks: NavLink[];
