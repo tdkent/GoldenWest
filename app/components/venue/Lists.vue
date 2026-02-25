@@ -1,5 +1,4 @@
 <script setup lang="ts">
-	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
 	import type { VenueList } from '~/types/venue.types';
 
 	const venueLists: VenueList[] = [
@@ -68,10 +67,9 @@
 						target="_blank"
 						rel="noopener"
 						:to="item.url"
-						class="hover:text-teal-600 dark:hover:text-teal-400">
+						class="link">
 						{{ item.name }}
 					</NuxtLink>
-					<ArrowTopRightOnSquareIcon class="size-4" />
 				</div>
 				<span v-else>{{ item.name }}</span>
 			</li>
