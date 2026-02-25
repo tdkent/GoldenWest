@@ -28,7 +28,7 @@
 			<UButton
 				variant="outline"
 				size="lg"
-				class="mt-20 font-semibold transition-all duration-200 hover:scale-110"
+				class="mt-20 font-bold transition-all duration-200 hover:scale-110"
 				@click="handleClearError">
 				<ArrowLeftIcon class="size-4" />
 				Home

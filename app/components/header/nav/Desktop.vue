@@ -16,7 +16,7 @@
 				:key="link.label"
 				class="">
 				<NuxtLink
-					class="font-serif text-xl font-light hover:text-yellow-600"
+					class="font-serif text-xl hover:text-yellow-600"
 					:to="link.to">
 					{{ link.label }}
 				</NuxtLink>

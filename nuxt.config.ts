@@ -32,10 +32,10 @@ export default defineNuxtConfig({
 	},
 	googleFonts: {
 		families: {
-			'Open Sans': [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			'Open Sans': [400, 700],
 			'Mate SC': [400],
-			'Cormorant Garamond': [300, 400],
-			'Urbanist': [300, 500]
+			'Cormorant Garamond': [400],
+			'Urbanist': [300]
 		}
 	},
 })
