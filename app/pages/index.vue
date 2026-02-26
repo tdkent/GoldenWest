@@ -30,6 +30,7 @@
 	<div class="main-content">
 		<section
 			class="mb-4 mt-16 flex w-full flex-col gap-12 py-4 lg:gap-20 lg:py-8">
+			<h2 class="sr-only">Event Dates and Location</h2>
 			<div class="flex flex-col items-center gap-4">
 				<span
 					class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
@@ -76,6 +77,7 @@
 		</section>
 
 		<section>
+			<h2 class="sr-only">Divisions</h2>
 			<UDivider label="Divisions" />
 			<div
 				class="my-4 flex w-full max-w-lg flex-col items-center gap-12 py-4 lg:gap-20 lg:py-8">

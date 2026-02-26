@@ -6,9 +6,10 @@
 
 <template>
 	<div class="main-content">
-		<h2>Venue &amp; Lodging</h2>
+		<h1>Venue &amp; Lodging</h1>
 		<section>
-			<UDivider label="Location" />
+			<UDivider label="Event Location" />
+			<h2 class="sr-only">Event Location</h2>
 			<div class="my-4 flex flex-col justify-center gap-8">
 				<p>
 					The show will be held at:

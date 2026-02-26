@@ -23,13 +23,15 @@
 
 <template>
 	<div class="main-content relative">
-		<h2>How the Show Works</h2>
-		<SharedBackToTop
-			v-if="viewport.isLessThan('lg')"
-			:show="showButton" />
-		<div ref="intersectPoint" />
-		<div>
-			<ShowContent class="lg:col-span-3" />
-		</div>
+		<header>
+			<h1>How the Show Works</h1>
+		</header>
+		<div
+			id="intersection"
+			ref="intersectPoint" />
+		<ShowContent class="lg:col-span-3" />
 	</div>
+	<SharedBackToTop
+		v-if="viewport.isLessThan('lg')"
+		:show="showButton" />
 </template>

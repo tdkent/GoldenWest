@@ -55,6 +55,7 @@
 		v-for="list in venueLists"
 		:key="list.label">
 		<UDivider :label="list.label" />
+		<h2 class="sr-only">{{ list.label }}</h2>
 		<ul class="flex flex-col items-center divide-y-0 divide-gray-700">
 			<li
 				v-for="item in list.items"
