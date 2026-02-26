@@ -1,5 +1,15 @@
 <script setup lang="ts">
-	useHead({ title: 'Entry Form' });
+	import { CANONICAL_URL } from '~/lib/constants';
+
+	const title = 'Entry Form';
+
+	useHead({ title });
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/entry`,
+	});
+
 	const viewport = useViewport();
 </script>
 

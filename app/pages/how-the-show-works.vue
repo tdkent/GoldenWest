@@ -1,6 +1,15 @@
 <script setup lang="ts">
+	import { CANONICAL_URL } from '~/lib/constants';
+
+	const title = 'How the Show Works';
+
 	useHead({
-		title: 'How the Show Works',
+		title,
+	});
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/how-the-show-works`,
 	});
 
 	// Use Intersection API to render "Back To Top" button

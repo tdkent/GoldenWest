@@ -1,6 +1,15 @@
 <script setup lang="ts">
+	import { CANONICAL_URL } from '~/lib/constants';
+
+	const title = 'Venue & Lodging';
+
 	useHead({
-		title: 'Venue & Lodging',
+		title,
+	});
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/venue-lodging`,
 	});
 </script>
 

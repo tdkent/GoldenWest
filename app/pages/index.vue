@@ -1,8 +1,12 @@
 <script setup lang="ts">
+	import { CANONICAL_URL } from '~/lib/constants';
 	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
 
-	useHead({
-		title: 'Home',
+	useHead({ title: 'Home' });
+
+	useSeoMeta({
+		ogTitle: 'Golden West Model Horse Show Home Page',
+		ogUrl: CANONICAL_URL,
 	});
 
 	const divisions = {
