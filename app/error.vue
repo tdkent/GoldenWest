@@ -4,11 +4,11 @@
 		ExclamationTriangleIcon,
 		ArrowLeftIcon,
 	} from '@heroicons/vue/24/outline';
-	
+
 	defineProps({
 		error: { type: Object as () => NuxtError, required: true },
 	});
-	
+
 	function handleClearError() {
 		clearError({ redirect: '/' });
 	}

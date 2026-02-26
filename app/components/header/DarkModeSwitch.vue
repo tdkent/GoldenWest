@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline';
-	
+
 	const colorMode = useColorMode();
 	const isDark = computed({
 		get() {
