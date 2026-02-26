@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<h1 class="mx-auto w-fit font-header lg:mx-0">
+	<span class="mx-auto w-fit font-header lg:mx-0">
 		<template v-if="viewport.isLessThan('lg')">
 			<span class="gold-gradient mt-2 block text-center text-[16px] sm:text-lg">
 				Golden West Model Horse Show
@@ -17,5 +17,5 @@
 				>Golden West Model Horse Show Region 2 Championship</span
 			>
 		</template>
-	</h1>
+	</span>
 </template>

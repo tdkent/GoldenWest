@@ -23,7 +23,7 @@
 
 <template>
 	<div class="main-content relative">
-		<h2>Show Rules</h2>
+		<h1>Show Rules</h1>
 		<SharedBackToTop
 			v-if="viewport.isLessThan('lg')"
 			:show="showButton" />

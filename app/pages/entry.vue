@@ -5,7 +5,7 @@
 
 <template>
 	<div class="main-content">
-		<h2>Entry Form</h2>
+		<h1>Entry Form</h1>
 		<section>
 			<UDivider />
 			<div class="show-rules">

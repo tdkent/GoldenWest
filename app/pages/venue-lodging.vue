@@ -6,7 +6,7 @@
 
 <template>
 	<div class="main-content">
-		<h2>Venue &amp; Lodging</h2>
+		<h1>Venue &amp; Lodging</h1>
 		<section>
 			<UDivider label="Location" />
 			<div class="my-4 flex flex-col justify-center gap-8">

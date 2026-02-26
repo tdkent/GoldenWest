@@ -3,7 +3,7 @@
 		<section>
 			<UDivider />
 			<h2
-				class="w-full px-8 py-4 text-left text-2xl md:px-16 md:text-3xl lg:pl-32 lg:pr-60">
+				class="w-full font-serif px-8 py-4 text-left text-2xl md:px-16 md:text-3xl lg:pl-32 lg:pr-60">
 				The Golden West Championship Show is a little different...
 			</h2>
 			<div class="show-rules">
