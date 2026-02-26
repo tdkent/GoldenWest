@@ -1,9 +1,8 @@
 <template>
-	<div>
 		<section>
-			<UDivider id="general-rules" />
-			<div class="show-rules">
-				<ul>
+			<h2 class="sr-only">General Rules</h2>
+			<UDivider />
+				<ul class="show-rules">
 					<li>
 						<strong>This is a 3x5-card show.</strong> Standard Region 2 card
 						format will be used. Showers need to provide a 3x5 index card for
@@ -95,10 +94,8 @@
 						of the show. Thank you!
 					</li>
 				</ul>
-				<p class="mt-12 w-full text-lg md:text-xl">
+				<p class="show-rules mt-12 w-full text-lg md:text-xl">
 					Questions? Please ask the judge or the show-holder.
 				</p>
-			</div>
 		</section>
-	</div>
 </template>

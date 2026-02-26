@@ -1,13 +1,11 @@
 <template>
-	<div>
 		<section>
 			<UDivider />
 			<h2
-				class="w-full font-serif px-8 py-4 text-left text-2xl md:px-16 md:text-3xl lg:pl-32 lg:pr-60">
+				class="w-full px-8 py-4 text-left font-serif text-2xl md:px-16 md:text-3xl lg:pl-32 lg:pr-60">
 				The Golden West Championship Show is a little different...
 			</h2>
-			<div class="show-rules">
-				<ul>
+				<ul class="show-rules">
 					<li>
 						Most of the classes are for models that have qualified in previous
 						shows (except for Hartland, Performance and Medallions
@@ -90,10 +88,8 @@
 						>.
 					</li>
 				</ul>
-				<p class="mt-12 w-full text-lg md:text-xl">
+				<p class="show-rules mt-12 w-full text-lg md:text-xl">
 					Questions? Please ask the judge or the show-holder.
 				</p>
-			</div>
 		</section>
-	</div>
 </template>
