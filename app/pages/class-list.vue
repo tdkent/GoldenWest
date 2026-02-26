@@ -33,36 +33,38 @@
 
 <template>
 	<div class="main-content">
+		<header>
 		<h1>Class List</h1>
 		<p class="mt-8 text-center font-serif text-lg md:text-xl">
 			Note: "LC" means "Last Chance" or unqualified models class.
 		</p>
-
 		<div class="my-8 flex flex-col items-center justify-center gap-6">
 			<UButton
-				icon="i-heroicons-document-arrow-down"
-				label="Download MS Word"
-				size="lg"
-				variant="outline"
-				class="font-bold transition-all duration-200 hover:scale-110"
-				:to="wordUrl"
-				:filename="`${fileName}.docx`"
-				title="Download Class List in Word Format"
-				download />
+			icon="i-heroicons-document-arrow-down"
+			label="Download MS Word"
+			size="lg"
+			variant="outline"
+			class="font-bold transition-all duration-200 hover:scale-110"
+			:to="wordUrl"
+			:filename="`${fileName}.docx`"
+			title="Download Class List in Word Format"
+			download />
 			<UButton
-				icon="i-heroicons-document-arrow-down"
-				label="Download PDF"
-				size="lg"
-				variant="outline"
-				class="font-bold transition-all duration-200 hover:scale-110"
-				:to="pdfUrl"
-				target="_blank"
-				:filename="`${fileName}.pdf`"
-				title="Download Class List in PDF Format"
-				download />
+			icon="i-heroicons-document-arrow-down"
+			label="Download PDF"
+			size="lg"
+			variant="outline"
+			class="font-bold transition-all duration-200 hover:scale-110"
+			:to="pdfUrl"
+			target="_blank"
+			:filename="`${fileName}.pdf`"
+			title="Download Class List in PDF Format"
+			download />
 		</div>
+	</header>
 		<section v-for="day of days.sort((a, b) => a.id - b.id)">
 			<UDivider :label="day.date" />
+			<h2 class="sr-only">{{ day.date }} Class List</h2>
 			<ClassListData
 				:day="day.id"
 				:columns="day.columns" />
