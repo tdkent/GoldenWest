@@ -22,7 +22,7 @@
 		@click="isOpen = true">
 		<Bars3Icon class="h-8 w-8 stroke-gray-900 dark:stroke-gray-100" />
 	</UButton>
-	
+
 	<USlideover v-model="isOpen">
 		<div>
 			<UButton

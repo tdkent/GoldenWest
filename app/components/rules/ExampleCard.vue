@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	import { CARD_MODAL_HEADER } from '~/lib/constants';
-	
+
 	const isOpen = ref(false);
 	function closeModal() {
 		isOpen.value = false;
