@@ -1,6 +1,24 @@
 <script setup lang="ts">
+	import { CANONICAL_URL } from '~/lib/constants';
+
+	const title = 'Venue & Lodging';
+
 	useHead({
-		title: 'Venue & Lodging',
+		title,
+	});
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/venue-lodging`,
+	});
+
+	useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: 'Venues & Lodging',
+		about: {
+			'@id': 'https://yoursite.com/#event',
+		},
 	});
 </script>
 

@@ -1,0 +1,19 @@
+{
+	"manifest_version": 1,
+	"name": "Golden West Model Horse Show Region 2 Championship Event Website",
+	"short_name": "GW Horse Show",
+	"homepage_url": "https://r2champnca.com",
+	"developer": {
+		"name": "Tim Kent",
+		"url": "https://www.timdkent.com"
+	},
+	"description": "Comprehensive information about the Golden West Model Horse Show Region 2 Championship that will be held November 2026, in Davis, CA.",
+	"icons": {
+		"16": "icon@16.png",
+		"32": "icon@32.png",
+		"64": "icon@64.png",
+		"180": "apple-touch-icon.png",
+		"192": "icon@192.png",
+		"512": "icon@512.png"
+	}
+}

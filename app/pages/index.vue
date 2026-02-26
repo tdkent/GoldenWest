@@ -1,8 +1,39 @@
 <script setup lang="ts">
+	import { CANONICAL_URL, SITE_DESCRIPTION, SITE_TITLE } from '~/lib/constants';
 	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
 
-	useHead({
-		title: 'Home',
+	useHead({ title: 'Home' });
+
+	useSeoMeta({
+		ogTitle: 'Golden West Model Horse Show Home Page',
+		ogUrl: CANONICAL_URL,
+	});
+
+	useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'Event',
+		'@id': `${CANONICAL_URL}/#organization`,
+		name: SITE_TITLE,
+		startDate: '2026-11-14T08:00-18:00',
+		endDate: '2026-11-15T08:00-18:00',
+		eventStatus: 'https://schema.org/EventScheduled',
+		location: {
+			'@type': 'Place',
+			name: 'Davis Senior Center',
+			address: {
+				'@type': 'PostalAddress',
+				streetAddress: '646 A St',
+				addressLocality: 'Davis',
+				postalCode: '95616',
+				addressRegion: 'CA',
+				addressCountry: 'US',
+			},
+		},
+		description: SITE_DESCRIPTION,
+		organizer: {
+			'@type': 'Person',
+			name: 'Robin Kent',
+		},
 	});
 
 	const divisions = {

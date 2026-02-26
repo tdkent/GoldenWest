@@ -1,13 +1,28 @@
 <script setup lang="ts">
+	import { CANONICAL_URL } from '~/lib/constants';
 	import { dayOneDayOfWeek, dayTwoDayOfWeek } from '~/lib/dates';
 	import { API_URL } from '~/lib/constants';
+
+	const title = 'Class List';
 
 	const fileName = 'GW_R2C_ClassList_2026';
 	const wordUrl = `${API_URL}/files/${fileName}.docx`;
 	const pdfUrl = `${API_URL}/files/${fileName}.pdf`;
 
-	useHead({
-		title: 'Class List',
+	useHead({ title });
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/class-list`,
+	});
+
+	useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: 'Class List',
+		about: {
+			'@id': 'https://yoursite.com/#event',
+		},
 	});
 
 	const days = [
