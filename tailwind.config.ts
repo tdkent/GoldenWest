@@ -61,10 +61,10 @@ export default <Partial<Config>>{
 				},
 			},
 			fontFamily: {
-				sans: ['Open Sans', 'sans'],
+				sans: ['Open Sans', 'sans-serif'],
 				header: ['Mate SC', 'serif'],
 				serif: ['Cormorant Garamond', 'serif'],
-				splash: ['Urbanist', 'sans'],
+				splash: ['Urbanist', 'sans-serif'],
 			},
 			keyframes: {
 				'pic-1': {

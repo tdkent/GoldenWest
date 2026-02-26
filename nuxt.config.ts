@@ -5,7 +5,6 @@ export default defineNuxtConfig({
 	modules: [
         '@nuxt/ui',
         '@nuxtjs/tailwindcss',
-        "@nuxtjs/google-fonts",
         "@nuxt/scripts",
         '@nuxtjs/color-mode',
         "nuxt-viewport"
@@ -29,16 +28,5 @@ export default defineNuxtConfig({
 		},
 	colorMode: {
 		preference: 'system'
-	},
-	googleFonts: {
-		families: {
-			'Open Sans': [400, 700],
-			'Mate SC': [400],
-			'Cormorant Garamond': [400],
-			'Urbanist': [300]
-		},
-		preload: true,
-		subsets: 'latin',
-		download: false
 	},
 })
