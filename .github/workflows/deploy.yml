@@ -44,7 +44,7 @@ jobs:
           key: deps-node-module-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install deps
-        run: npm ci
+        run: npm install
 
       - name: Create dist
         run: npm run build-static
