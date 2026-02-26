@@ -32,22 +32,13 @@ export default defineNuxtConfig({
 	},
 	googleFonts: {
 		families: {
-			'Open Sans': [100, 200, 300, 400, 500, 600, 700, 800, 900],
+			'Open Sans': [400, 700],
 			'Mate SC': [400],
-			'Cormorant Garamond': [300, 400],
-			'Urbanist': [300, 500]
-		}
-	},
-	// Workaround: Netlify, Nuxt JS heap issue workaround
-	// https://answers.netlify.com/t/javascript-heap-out-of-memory-when-trying-to-build-a-nuxt-app/93138/12
-	postcss: {
-		plugins: {
-			tailwindcss: {},
-			autoprefixer: {},
-		 cssnano:
-			 process.env.NODE_ENV === 'production'
-				 ? { preset: ['default', { discardComments: { removeAll: true } }] }
-				 : false, // disable cssnano when not in production
+			'Cormorant Garamond': [400],
+			'Urbanist': [300]
 		},
- }
+		preload: true,
+		subsets: 'latin',
+		download: false
+	},
 })

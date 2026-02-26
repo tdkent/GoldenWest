@@ -1,7 +1,4 @@
 <script setup lang="ts">
-	// Imports
-	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
-	// Metadata
 	useHead({
 		title: 'Venue & Lodging',
 	});

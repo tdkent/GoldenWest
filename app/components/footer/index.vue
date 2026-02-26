@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { currentYear } from '#imports';
+	import { currentYear } from '~/lib/dates';
 </script>
 
 <template>

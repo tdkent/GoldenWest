@@ -1,14 +1,17 @@
 <script setup lang="ts">
-	// Imports
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
-	// Internal Imports
-	import { navLinks } from '~/data/nav';
-	// State
+	import type { NavLink } from '~/lib/types';
+
+	interface Props {
+		navLinks: NavLink[];
+	}
+
+	const { navLinks } = defineProps<Props>();
+
 	const isOpen = ref(false);
 </script>
 
 <template>
-	<!-- Open Slideover Button -->
 	<UButton
 		color="white"
 		variant="ghost"
@@ -19,7 +22,7 @@
 		@click="isOpen = true">
 		<Bars3Icon class="h-8 w-8 stroke-gray-900 dark:stroke-gray-100" />
 	</UButton>
-	<!-- Slideover -->
+	
 	<USlideover v-model="isOpen">
 		<div>
 			<UButton
@@ -40,7 +43,7 @@
 							:key="link.label"
 							class="border-b border-gray-200 py-3">
 							<NuxtLink
-								class="font-serif text-2xl font-light"
+								class="font-serif text-2xl"
 								:to="link.to"
 								@click="isOpen = false">
 								{{ link.label }}

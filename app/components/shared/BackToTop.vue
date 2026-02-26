@@ -1,7 +1,5 @@
 <script setup lang="ts">
-	// Imports
 	import { ArrowUpCircleIcon } from '@heroicons/vue/24/solid';
-	// Props
 	const { show } = defineProps<{ show: Boolean }>();
 </script>
 

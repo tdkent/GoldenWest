@@ -1,7 +1,6 @@
 <script setup lang="ts">
-	import { DocumentArrowDownIcon } from '@heroicons/vue/24/outline';
-	import { dayOneDayOfWeek, dayTwoDayOfWeek } from '#imports';
-	import { API_URL } from '~/constants';
+	import { dayOneDayOfWeek, dayTwoDayOfWeek } from '~/lib/dates';
+	import { API_URL } from '~/lib/constants';
 
 	const fileName = 'GW_R2C_ClassList_2026';
 	const wordUrl = `${API_URL}/files/${fileName}.docx`;
@@ -45,7 +44,7 @@
 				label="Download MS Word"
 				size="lg"
 				variant="outline"
-				class="font-semibold transition-all duration-200 hover:scale-110"
+				class="font-bold transition-all duration-200 hover:scale-110"
 				:to="wordUrl"
 				:filename="`${fileName}.docx`"
 				title="Download Class List in Word Format"
@@ -55,7 +54,7 @@
 				label="Download PDF"
 				size="lg"
 				variant="outline"
-				class="font-semibold transition-all duration-200 hover:scale-110"
+				class="font-bold transition-all duration-200 hover:scale-110"
 				:to="pdfUrl"
 				target="_blank"
 				:filename="`${fileName}.pdf`"

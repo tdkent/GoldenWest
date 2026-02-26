@@ -1,14 +1,6 @@
 <script setup lang="ts">
-	// Imports
-	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
-	// Internal Imports
-	import {
-		dayOneDayOfWeek,
-		// dayOneTableRows,
-		dayTwoDayOfWeek,
-		// dayTwoTableRows,
-	} from '#imports';
-	// Metadata
+	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
+
 	useHead({
 		title: 'Home',
 	});
@@ -40,7 +32,7 @@
 			class="mb-4 mt-16 flex w-full flex-col gap-12 py-4 lg:gap-20 lg:py-8">
 			<div class="flex flex-col items-center gap-4">
 				<span
-					class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+					class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
 					Event Dates
 				</span>
 				<div class="text-center">
@@ -55,12 +47,12 @@
 					label="Register Now"
 					size="lg"
 					variant="outline"
-					class="mt-4 font-semibold transition-all duration-200 hover:scale-110 lg:mt-6"
+					class="mt-4 font-bold transition-all duration-200 hover:scale-110 lg:mt-6"
 					to="/entry" />
 			</div>
 			<div class="flex flex-col items-center gap-4">
 				<span
-					class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+					class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
 					Location
 				</span>
 				<p class="text-center font-serif text-xl lg:text-2xl">
@@ -70,7 +62,7 @@
 			</div>
 			<div class="flex flex-col items-center gap-4">
 				<span
-					class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+					class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
 					Show Times
 				</span>
 
@@ -89,7 +81,7 @@
 				class="my-4 flex w-full max-w-lg flex-col items-center gap-12 py-4 lg:gap-20 lg:py-8">
 				<div class="flex flex-col items-center gap-4">
 					<span
-						class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+						class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
 						Saturday
 					</span>
 
@@ -105,7 +97,7 @@
 
 				<div class="flex flex-col items-center gap-4">
 					<span
-						class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+						class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
 						Sunday
 					</span>
 
@@ -123,7 +115,7 @@
 					label="Register Now"
 					size="lg"
 					variant="outline"
-					class="font-semibold transition-all duration-200 hover:scale-110"
+					class="font-bold transition-all duration-200 hover:scale-110"
 					to="/entry" />
 			</div>
 		</section>

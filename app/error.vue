@@ -1,15 +1,14 @@
 <script setup lang="ts">
-	// Imports
 	import type { NuxtError } from '#app';
 	import {
 		ExclamationTriangleIcon,
 		ArrowLeftIcon,
 	} from '@heroicons/vue/24/outline';
-	// Props
+	
 	defineProps({
 		error: { type: Object as () => NuxtError, required: true },
 	});
-	// Clear error
+	
 	function handleClearError() {
 		clearError({ redirect: '/' });
 	}
@@ -29,7 +28,7 @@
 			<UButton
 				variant="outline"
 				size="lg"
-				class="mt-20 font-semibold transition-all duration-200 hover:scale-110"
+				class="mt-20 font-bold transition-all duration-200 hover:scale-110"
 				@click="handleClearError">
 				<ArrowLeftIcon class="size-4" />
 				Home

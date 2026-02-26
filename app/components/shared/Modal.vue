@@ -1,7 +1,5 @@
 <script setup lang="ts">
-	// Imports
 	import { XCircleIcon } from '@heroicons/vue/24/outline';
-	// Props
 	const { header } = defineProps<{
 		header: string;
 		close: () => void;

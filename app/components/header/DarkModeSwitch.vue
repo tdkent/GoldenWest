@@ -1,7 +1,6 @@
 <script setup lang="ts">
-	// Imports
 	import { MoonIcon, SunIcon } from '@heroicons/vue/24/outline';
-	// Nuxt color mode
+	
 	const colorMode = useColorMode();
 	const isDark = computed({
 		get() {
