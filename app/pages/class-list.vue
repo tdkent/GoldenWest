@@ -16,6 +16,15 @@
 		ogUrl: `${CANONICAL_URL}/class-list`,
 	});
 
+	useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: 'Class List',
+		about: {
+			'@id': 'https://yoursite.com/#event',
+		},
+	});
+
 	const days = [
 		{
 			id: 1,

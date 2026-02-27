@@ -12,6 +12,15 @@
 		ogUrl: `${CANONICAL_URL}/how-the-show-works`,
 	});
 
+		useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: 'How the Show Works',
+		about: {
+			'@id': 'https://yoursite.com/#event',
+		},
+	});
+
 	// Use Intersection API to render "Back To Top" button
 	const intersectPoint: globalThis.Ref<Element | null> = ref(null);
 	const showButton = ref(false);
