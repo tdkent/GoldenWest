@@ -12,7 +12,7 @@
 		ogUrl: `${CANONICAL_URL}/how-the-show-works`,
 	});
 
-		useJsonld({
+	useJsonld({
 		'@context': 'https://schema.org',
 		'@type': 'WebPage',
 		name: 'How the Show Works',

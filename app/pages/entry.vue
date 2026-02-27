@@ -2,7 +2,8 @@
 	import { CANONICAL_URL } from '~/lib/constants';
 
 	const title = 'Entry Form';
-	const formUrl = 'https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4'
+	const formUrl =
+		'https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4';
 
 	useHead({ title });
 
@@ -19,9 +20,9 @@
 			'@id': 'https://yoursite.com/#event',
 		},
 		potentialAction: {
-			"@type": "RegisterAction",
-			"target": formUrl
-		}
+			'@type': 'RegisterAction',
+			target: formUrl,
+		},
 	});
 
 	const viewport = useViewport();

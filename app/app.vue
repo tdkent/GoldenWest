@@ -7,7 +7,16 @@
 			{ name: 'description', content: SITE_DESCRIPTION },
 			{ name: 'robots', content: 'index, follow' },
 		],
-		link: [{ rel: 'canonical', href: CANONICAL_URL }],
+		link: [
+			{ rel: 'canonical', href: CANONICAL_URL },
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{
+				rel: 'apple-touch-icon',
+				type: 'image/png',
+				href: '/apple-touch-icon.png',
+			},
+			{ rel: 'manifest', href: '/manifest.json' },
+		],
 		titleTemplate: (titleChunk) => {
 			return titleChunk ? `${titleChunk} - ${SITE_TITLE}` : SITE_TITLE;
 		},
@@ -15,7 +24,7 @@
 
 	useSeoMeta({
 		ogDescription: SITE_DESCRIPTION,
-		ogImage: 'URL HERE',
+		ogImage: `${CANONICAL_URL}/images/icon-512.png`,
 	});
 </script>
 

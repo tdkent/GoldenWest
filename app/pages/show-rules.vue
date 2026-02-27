@@ -9,7 +9,7 @@
 		ogUrl: `${CANONICAL_URL}/show-rules`,
 	});
 
-		useJsonld({
+	useJsonld({
 		'@context': 'https://schema.org',
 		'@type': 'WebPage',
 		name: 'Show Rules',
