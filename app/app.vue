@@ -10,6 +10,9 @@
 		link: [
 			{ rel: 'canonical', href: CANONICAL_URL },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'icon', type: 'image/png', href: '/icon@16.png', sizes:'16x16' },
+			{ rel: 'icon', type: 'image/png', href: '/icon@32.png', sizes:'32x32' },
+			{ rel: 'icon', type: 'image/png', href: '/icon@64.png', sizes:'64x64' },
 			{
 				rel: 'apple-touch-icon',
 				type: 'image/png',
