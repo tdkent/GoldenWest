@@ -10,11 +10,11 @@
 		link: [
 			{ rel: 'canonical', href: CANONICAL_URL },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-			{ rel: 'icon', type: 'image/png', href: 'images/icon-64.png' },
+			{ rel: 'icon', type: 'image/png', href: '/images/icon-64.png' },
 			{
 				rel: 'apple-touch-icon',
 				type: 'image/png',
-				href: 'images/apple-touch-icon.png',
+				href: '/images/apple-touch-icon.png',
 			},
 			{ rel: 'manifest', href: '/manifest.json' },
 		],
