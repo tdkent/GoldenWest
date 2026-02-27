@@ -13,7 +13,7 @@
 			{
 				rel: 'apple-touch-icon',
 				type: 'image/png',
-				href: '/apple-touch-icon.png',
+				href: 'images/apple-touch-icon.png',
 			},
 			{ rel: 'manifest', href: '/manifest.json' },
 		],
