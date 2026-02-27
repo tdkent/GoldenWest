@@ -1,5 +1,30 @@
 <script setup lang="ts">
-	useHead({ title: 'Entry Form' });
+	import { CANONICAL_URL } from '~/lib/constants';
+
+	const title = 'Entry Form';
+	const formUrl =
+		'https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4';
+
+	useHead({ title });
+
+	useSeoMeta({
+		ogTitle: title,
+		ogUrl: `${CANONICAL_URL}/entry`,
+	});
+
+	useJsonld({
+		'@context': 'https://schema.org',
+		'@type': 'WebPage',
+		name: 'Entry Form',
+		about: {
+			'@id': 'https://yoursite.com/#event',
+		},
+		potentialAction: {
+			'@type': 'RegisterAction',
+			target: formUrl,
+		},
+	});
+
 	const viewport = useViewport();
 </script>
 
@@ -17,7 +42,7 @@
 				:size="viewport.isLessThan('md') ? 'lg' : 'xl'"
 				variant="outline"
 				class="my-10 ml-2 text-sm font-bold transition-all duration-200 hover:scale-110 lg:my-12"
-				to="https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4"
+				:to="formUrl"
 				target="_blank"
 				rel="noopener" />
 			<p>Your entry form should be submitted in two parts:</p>
