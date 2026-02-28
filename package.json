@@ -20,8 +20,7 @@
 		"nuxt": "^4.3.1",
 		"nuxt-jsonld": "^2.2.1",
 		"nuxt-viewport": "^2.1.5",
-		"vue": "latest",
-		"zod": "^3.23.8"
+		"vue": "latest"
 	},
 	"devDependencies": {
 		"@nuxt/eslint-config": "^0.3.13",
