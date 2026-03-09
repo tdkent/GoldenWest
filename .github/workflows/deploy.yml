@@ -62,7 +62,7 @@ jobs:
 
       - name: Upload non-HTML w/long-lived cache policy
         run: |
-          aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --exclude "*.html" --cache-control "max-age:31536000, immutable" --recursive
+          aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --exclude "*.html" --cache-control "max-age=31536000, immutable" --recursive
 
       - name: Upload HTML with no-cache policy
         run: |
