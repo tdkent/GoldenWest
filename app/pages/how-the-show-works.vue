@@ -4,7 +4,7 @@
 	const title = 'How the Show Works';
 
 	useHead({
-		title,
+		title, link: [{rel: 'canonical', href: `${CANONICAL_URL}/how-the-show-works`}]
 	});
 
 	useSeoMeta({

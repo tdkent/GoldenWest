@@ -2,7 +2,7 @@
 	import { CANONICAL_URL, SITE_DESCRIPTION, SITE_TITLE } from '~/lib/constants';
 	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
 
-	useHead({ title: 'Home' });
+	useHead({ title: 'Home', link: [{rel: 'canonical', href:CANONICAL_URL}] });
 
 	useSeoMeta({
 		ogTitle: 'Golden West Model Horse Show Home Page',

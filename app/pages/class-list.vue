@@ -9,7 +9,7 @@
 	const wordUrl = `${API_URL}/files/${fileName}.docx`;
 	const pdfUrl = `${API_URL}/files/${fileName}.pdf`;
 
-	useHead({ title });
+	useHead({ title, link: [{rel: 'canonical', href: `${CANONICAL_URL}/class-list`}] });
 
 	useSeoMeta({
 		ogTitle: title,

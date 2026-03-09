@@ -5,7 +5,7 @@
 	const formUrl =
 		'https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4';
 
-	useHead({ title });
+	useHead({ title, link: [{rel: 'canonical', href: `${CANONICAL_URL}/entry`}] });
 
 	useSeoMeta({
 		ogTitle: title,

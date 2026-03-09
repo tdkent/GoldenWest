@@ -8,7 +8,6 @@
 			{ name: 'robots', content: 'index, follow' },
 		],
 		link: [
-			{ rel: 'canonical', href: CANONICAL_URL },
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'icon', type: 'image/png', href: '/icon@16.png', sizes:'16x16' },
 			{ rel: 'icon', type: 'image/png', href: '/icon@32.png', sizes:'32x32' },
