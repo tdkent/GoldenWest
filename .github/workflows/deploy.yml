@@ -60,9 +60,13 @@ jobs:
         run: |
           aws s3 rm s3://${{ secrets.S3_BUCKET }}/ --recursive
 
-      - name: Upload fresh dist
+      - name: Upload non-HTML w/long-lived cache policy
         run: |
-          aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --recursive
+          aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --exclude "*.html" --cache-control "max-age:31536000, immutable" --recursive
+
+      - name: Upload HTML with no-cache policy
+        run: |
+          aws s3 cp ./dist/ s3://${{ secrets.S3_BUCKET }}/ --exclude "*" --include "*.html" --cache-control no-cache --recursive
 
       - name: Invalidate CloudFront cache
         run: |
