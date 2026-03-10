@@ -13,54 +13,50 @@
 			class="splash-slide animate-slide-1 md:object-[0%_20%] lg:object-[0%_14%]">
 			<source
 				:srcset="createSrcSets(1).avif"
-				sizes="100vw"
 				type="image/avif" />
 			<source
 				:srcset="createSrcSets(1).webp"
-				sizes="100vw"
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-1/model-horse-1@1280.jpeg`"
+				fetchpriority="high"
 				alt="Horse sculpture" />
 		</picture>
 		<picture
 			class="splash-slide animate-slide-2 md:object-[0%_30%] lg:object-[0%_20%]">
 			<source
 				:srcset="createSrcSets(4).avif"
-				sizes="100vw"
 				type="image/avif" />
 			<source
 				:srcset="createSrcSets(4).webp"
-				sizes="100vw"
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-4/model-horse-4@1280.jpeg`"
+				fetchpriority="high"
 				alt="Horse sculpture" />
 		</picture>
 		<picture class="splash-slide animate-slide-3 md:object-[0%_5%]">
 			<source
 				:srcset="createSrcSets(3).avif"
-				sizes="100vw"
 				type="image/avif" />
 			<source
 				:srcset="createSrcSets(3).webp"
-				sizes="100vw"
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-3/model-horse-3@1280.jpeg`"
+				fetchpriority="high"
 				alt="Model of a horse facing left" />
 		</picture>
 		<picture class="splash-slide animate-slide-4 md:object-[0%_20%]">
 			<source
 				:srcset="createSrcSets(2).avif"
-				sizes="100vw"
 				type="image/avif" />
 			<source
 				:srcset="createSrcSets(2).webp"
-				sizes="100vw"
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-2/model-horse-2@1280.jpeg`"
+				fetchpriority="high"
 				alt="Model of a horse and rider" />
 		</picture>
 		<div
