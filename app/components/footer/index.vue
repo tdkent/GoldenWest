@@ -1,15 +1,27 @@
 <script setup lang="ts">
 	import { currentYear } from '~/lib/dates';
+	import navLinks from '~/lib/nav';
 </script>
 
 <template>
 	<footer
-		class="min-h-24 border-t border-gray-400 bg-gray-200 p-4 text-gray-700 lg:px-12 dark:bg-gray-800 dark:text-gray-100">
+		class="min-h-24 border-t border-gray-400 bg-gray-200 p-4 pb-12 pt-8 text-gray-700 lg:px-12 dark:bg-gray-800 dark:text-gray-100">
 		<div
-			class="mx-auto flex w-full max-w-screen-lg flex-col items-start gap-2.5 text-xs">
-			<details>
+			class="mx-auto flex w-full max-w-screen-lg flex-col items-center justify-center gap-8 text-sm">
+			<ul class="flex flex-col items-center justify-center gap-3">
+				<li
+					v-for="link in navLinks"
+					:key="link.label">
+					<NuxtLink
+						class="hover:text-yellow-600"
+						:to="link.to">
+						{{ link.label }}
+					</NuxtLink>
+				</li>
+			</ul>
+			<details class="text-xs flex flex-col justify-center items-center">
 				<summary class="cursor-pointer">Image Attributions</summary>
-				<ul class="flex flex-col gap-2 list-disc list-inside p-2">
+				<ul class="flex flex-col gap-2 py-4">
 					<li>
 						<NuxtLink
 							href="https://commons.wikimedia.org/wiki/File:Th%C3%A9odore_Gericault,_Flayed_Horse_II,_model_c._1820-1824,_cast_c._1832,_NGA_57647.jpg"
@@ -44,7 +56,7 @@
 					</li>
 				</ul>
 			</details>
-			<p>Copyright &copy; {{ currentYear }} Golden West Model Horse Show</p>
+			<p class="text-xs">Copyright &copy; {{ currentYear }} Golden West Model Horse Show</p>
 		</div>
 	</footer>
 </template>
