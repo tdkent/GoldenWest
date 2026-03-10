@@ -12,19 +12,6 @@
 		ogUrl: `${CANONICAL_URL}/entry`,
 	});
 
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'Entry Form',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
-		potentialAction: {
-			'@type': 'RegisterAction',
-			target: formUrl,
-		},
-	});
-
 	const viewport = useViewport();
 </script>
 

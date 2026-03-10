@@ -14,8 +14,8 @@
 		'@type': 'Event',
 		'@id': `${CANONICAL_URL}/#organization`,
 		name: SITE_TITLE,
-		startDate: '2026-11-14T08:00-18:00',
-		endDate: '2026-11-15T08:00-18:00',
+		startDate: '2026-11-14',
+		endDate: '2026-11-15',
 		eventStatus: 'https://schema.org/EventScheduled',
 		location: {
 			'@type': 'Place',
