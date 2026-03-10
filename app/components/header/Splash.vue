@@ -37,7 +37,7 @@
 		</picture>
 		<picture class="splash-slide animate-slide-3 md:object-[0%_5%]">
 			<source
-				srcset="https://r2champnca.com/api/assets/model-horse-3/model-horse-3@480.avif 480w, https://r2champnca.com/api/assets/model-horse-3/model-horse-3@768.avif 768w, https://r2champnca.com/api/assets/model-horse-3/model-horse-3@1280.avif 1280w, https://r2champnca.com/api/assets/model-horse-3/model-horse-3@1920.avif 1920w"
+				:srcset="createSrcSets(3).avif"
 				type="image/avif" />
 			<source
 				:srcset="createSrcSets(3).webp"
