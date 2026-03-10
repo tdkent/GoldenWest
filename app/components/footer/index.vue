@@ -19,7 +19,7 @@
 					</NuxtLink>
 				</li>
 			</ul>
-			<details class="text-xs flex flex-col justify-center items-center">
+			<details class="flex flex-col items-center justify-center text-xs">
 				<summary class="cursor-pointer">Image Attributions</summary>
 				<ul class="flex flex-col gap-2 py-4">
 					<li>
@@ -56,7 +56,9 @@
 					</li>
 				</ul>
 			</details>
-			<p class="text-xs">Copyright &copy; {{ currentYear }} Golden West Model Horse Show</p>
+			<p class="text-xs">
+				Copyright &copy; {{ currentYear }} Golden West Model Horse Show
+			</p>
 		</div>
 	</footer>
 </template>
