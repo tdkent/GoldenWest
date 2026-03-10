@@ -29,7 +29,9 @@
 				This website does not request, collect, or store personal information
 				from visitors. There are no user accounts, login systems, comment
 				systems, forms, or other features that request personal data. This
-				website does not process or store payment information. This website does not use cookies or tracking technologies.</p>
+				website does not process or store payment information. This website does
+				not use cookies or tracking technologies.
+			</p>
 			<p>
 				However, the site links to a third-party service (Google Docs) for event
 				registration. Any personal or payment information submitted through

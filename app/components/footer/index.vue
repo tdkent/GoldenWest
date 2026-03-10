@@ -56,9 +56,15 @@
 					</li>
 				</ul>
 			</details>
-			<p class="text-xs">
-				Copyright &copy; {{ currentYear }} Golden West Model Horse Show
-			</p>
+			<span class="text-xs">
+				&copy; {{ currentYear }} Golden West MHS.
+				{{ ' ' }}
+				<NuxtLink
+					href="/disclaimer"
+					class="link"
+					>Privacy & Terms</NuxtLink
+				>
+			</span>
 		</div>
 	</footer>
 </template>
