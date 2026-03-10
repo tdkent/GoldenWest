@@ -5,20 +5,12 @@
 
 	useHead({
 		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/how-the-show-works` }],
 	});
 
 	useSeoMeta({
 		ogTitle: title,
 		ogUrl: `${CANONICAL_URL}/how-the-show-works`,
-	});
-
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'How the Show Works',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
 	});
 
 	// Use Intersection API to render "Back To Top" button

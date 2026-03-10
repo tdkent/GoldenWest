@@ -2,20 +2,14 @@
 	import { CANONICAL_URL } from '~/lib/constants';
 	const title = 'Show Rules';
 
-	useHead({ title });
+	useHead({
+		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/show-rules` }],
+	});
 
 	useSeoMeta({
 		ogTitle: title,
 		ogUrl: `${CANONICAL_URL}/show-rules`,
-	});
-
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'Show Rules',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
 	});
 
 	// Use Intersection API to render "Back To Top" button

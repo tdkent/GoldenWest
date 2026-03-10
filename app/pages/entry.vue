@@ -5,24 +5,14 @@
 	const formUrl =
 		'https://docs.google.com/forms/d/1E5mWcXPFipDCXZm8XVWfQImc6C6C26KjCaV-8Q7NyR4';
 
-	useHead({ title });
+	useHead({
+		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/entry` }],
+	});
 
 	useSeoMeta({
 		ogTitle: title,
 		ogUrl: `${CANONICAL_URL}/entry`,
-	});
-
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'Entry Form',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
-		potentialAction: {
-			'@type': 'RegisterAction',
-			target: formUrl,
-		},
 	});
 
 	const viewport = useViewport();

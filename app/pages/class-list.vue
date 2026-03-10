@@ -9,20 +9,14 @@
 	const wordUrl = `${API_URL}/files/${fileName}.docx`;
 	const pdfUrl = `${API_URL}/files/${fileName}.pdf`;
 
-	useHead({ title });
+	useHead({
+		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/class-list` }],
+	});
 
 	useSeoMeta({
 		ogTitle: title,
 		ogUrl: `${CANONICAL_URL}/class-list`,
-	});
-
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'Class List',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
 	});
 
 	const days = [

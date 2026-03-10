@@ -5,20 +5,12 @@
 
 	useHead({
 		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/venue-lodging` }],
 	});
 
 	useSeoMeta({
 		ogTitle: title,
 		ogUrl: `${CANONICAL_URL}/venue-lodging`,
-	});
-
-	useJsonld({
-		'@context': 'https://schema.org',
-		'@type': 'WebPage',
-		name: 'Venues & Lodging',
-		about: {
-			'@id': 'https://yoursite.com/#event',
-		},
 	});
 </script>
 

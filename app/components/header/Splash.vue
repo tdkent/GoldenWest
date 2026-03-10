@@ -1,29 +1,68 @@
 <script setup lang="ts">
 	import { API_URL } from '~/lib/constants';
+	import createSrcSets from '~/lib/img';
 	const route = useRoute();
 	const imgBaseUrl = `${API_URL}/assets`;
 </script>
 
 <template>
-		<div
+	<div
 		v-if="route.path === '/'"
 		class="relative flex aspect-[7/5] max-h-[500px] w-full items-center justify-center overflow-hidden md:h-auto md:max-h-[500px] lg:justify-end">
-		<img
-			:src="`${imgBaseUrl}/model-horse-1.webp`"
-			alt="Model of a horse facing left"
-			class="splash-slide animate-slide-1 md:object-[0%_20%] lg:object-[0%_14%]" />
-		<img
-			:src="`${imgBaseUrl}/model-horse-4.webp`"
-			alt="Model horse facing right"
-			class="splash-slide animate-slide-2 md:object-[0%_30%] lg:object-[0%_20%]" />
-		<img
-			:src="`${imgBaseUrl}/model-horse-3.webp`"
-			alt="Model of a horse facing left"
-			class="splash-slide animate-slide-3 md:object-[0%_5%]" />
-		<img
-			:src="`${imgBaseUrl}/model-horse-2.webp`"
-			alt="Model of a horse and rider"
-			class="splash-slide animate-slide-4 md:object-[0%_20%]" />
+		<picture
+			class="splash-slide animate-slide-1 md:object-[0%_20%] lg:object-[0%_14%]">
+			<source
+				:srcset="createSrcSets(1).avif"
+				sizes="100vw"
+				type="image/avif" />
+			<source
+				:srcset="createSrcSets(1).webp"
+				sizes="100vw"
+				type="image/webp" />
+			<img
+				:src="`${imgBaseUrl}/model-horse-1/model-horse-1@1280.jpeg`"
+				alt="Horse sculpture" />
+		</picture>
+		<picture
+			class="splash-slide animate-slide-2 md:object-[0%_30%] lg:object-[0%_20%]">
+			<source
+				:srcset="createSrcSets(4).avif"
+				sizes="100vw"
+				type="image/avif" />
+			<source
+				:srcset="createSrcSets(4).webp"
+				sizes="100vw"
+				type="image/webp" />
+			<img
+				:src="`${imgBaseUrl}/model-horse-4/model-horse-4@1280.jpeg`"
+				alt="Horse sculpture" />
+		</picture>
+		<picture class="splash-slide animate-slide-3 md:object-[0%_5%]">
+			<source
+				:srcset="createSrcSets(3).avif"
+				sizes="100vw"
+				type="image/avif" />
+			<source
+				:srcset="createSrcSets(3).webp"
+				sizes="100vw"
+				type="image/webp" />
+			<img
+				:src="`${imgBaseUrl}/model-horse-3/model-horse-3@1280.jpeg`"
+				alt="Model of a horse facing left" />
+		</picture>
+		<picture class="splash-slide animate-slide-4 md:object-[0%_20%]">
+			<source
+				:srcset="createSrcSets(2).avif"
+				sizes="100vw"
+				type="image/avif" />
+			<source
+				:srcset="createSrcSets(2).webp"
+				sizes="100vw"
+				type="image/webp" />
+			<img
+				:src="`${imgBaseUrl}/model-horse-2/model-horse-2@1280.jpeg`"
+				alt="Model of a horse and rider" />
+		</picture>
 		<div
 			class="absolute h-full w-full bg-[linear-gradient(to_right,rgba(222,145,29,0.9),rgba(247,201,72,0.7),rgba(247,201,72,0.8),rgba(64,195,247,0.7))]"></div>
 		<HeaderTaglines />
