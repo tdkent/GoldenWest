@@ -4,7 +4,8 @@
 	const title = 'Venue & Lodging';
 
 	useHead({
-		title, link: [{rel: 'canonical', href: `${CANONICAL_URL}/venue-lodging`}]
+		title,
+		link: [{ rel: 'canonical', href: `${CANONICAL_URL}/venue-lodging` }],
 	});
 
 	useSeoMeta({

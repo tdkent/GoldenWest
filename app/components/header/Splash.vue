@@ -5,7 +5,7 @@
 </script>
 
 <template>
-		<div
+	<div
 		v-if="route.path === '/'"
 		class="relative flex aspect-[7/5] max-h-[500px] w-full items-center justify-center overflow-hidden md:h-auto md:max-h-[500px] lg:justify-end">
 		<img
