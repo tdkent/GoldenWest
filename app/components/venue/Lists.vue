@@ -10,7 +10,7 @@
 					url: 'https://www.crepeville.com',
 				},
 				{
-					name: 'Tim\'s Hawaiian BBQ',
+					name: "Tim's Hawaiian BBQ",
 					url: 'https://timsbbqcampus.muncho.ai',
 				},
 				{

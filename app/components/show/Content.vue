@@ -19,7 +19,8 @@
 			eligible to show in Champ classes at the 2026 Champ Show.
 		</li>
 		<li>
-			Qualifying shows for the 2026 Champ Show run from January 1, 2024 to October 1, 2026.
+			Qualifying shows for the 2026 Champ Show run from January 1, 2024 to
+			October 1, 2026.
 		</li>
 		<li>
 			Once you have reserved <strong>and paid</strong> for your table space,
