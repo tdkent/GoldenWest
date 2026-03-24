@@ -16,16 +16,15 @@
 		</li>
 		<li>
 			Any model that placed 1st or 2nd at any of the qualifying shows is
-			eligible to show in Champ classes at the ???? Champ Show.
+			eligible to show in Champ classes at the 2026 Champ Show.
 		</li>
 		<li>
-			Qualifying shows for the ???? Champ Show run from January ?, ???? to
-			August ??, ????.
+			Qualifying shows for the 2026 Champ Show run from January 1, 2024 to October 1, 2026.
 		</li>
 		<li>
 			Once you have reserved <strong>and paid</strong> for your table space,
 			please send your list of models to the show-holder for verification
-			purposes no later than October ??, ????.
+			purposes no later than October 25, 2026.
 		</li>
 		<li>
 			A show held in a nearby region during this period may apply to be included
@@ -34,15 +33,15 @@
 			qualified at a show outside of R2, you must inform the registrar about
 			that model and what show it qualified at so that we may verify.)
 			Show-holders for those shows must either provide 1st through 2nd place
-			results for those shows to us by October ??, ???? or those results must be
+			results for those shows to us by October 1, 2026 or those results must be
 			available on the NAMHSA website.
 		</li>
 		<li>
-			<strong>Entries close at midnight PST on October ??, ????.</strong>
+			<strong>Entries close at midnight PST on October 25, 2026.</strong>
 			Entrants must first register and pay for their table space to reserve a
 			spot. All models (with the exception of the Last Chance and the Youth show
 			entries) must be pre-registered and prepaid. Your horse lists must be
-			submitted and paid for by October ??, ????. After you have registered and
+			submitted and paid for by October 25, 2026. After you have registered and
 			paid for your table space, you MUST submit a model horse entry list if you
 			are entering the Champ classes. You may submit your model list as soon as
 			you wish and may add/delete to the list up until the closing date. In
