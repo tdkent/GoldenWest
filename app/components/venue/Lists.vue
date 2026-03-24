@@ -10,8 +10,8 @@
 					url: 'https://www.crepeville.com',
 				},
 				{
-					name: 'Guads Tacos & Beer',
-					url: 'https://guadsdavis.com',
+					name: 'Tim\'s Hawaiian BBQ',
+					url: 'https://timsbbqcampus.muncho.ai',
 				},
 				{
 					name: "Shah's Halal Food (Truck)",
@@ -28,7 +28,7 @@
 			items: [
 				{
 					name: 'Aggie Inn',
-					url: null,
+					url: 'https://www.choicehotels.com/california/davis/ascend-hotels/cad04?mc=llgoxxpx',
 				},
 				{
 					name: 'Best Western Palm Court',
@@ -36,7 +36,7 @@
 				},
 				{
 					name: 'Econo Lodge Woodland',
-					url: null,
+					url: 'https://www.choicehotels.com/california/woodland/econo-lodge-hotels/cab63?gclid=CjwKCAjw687NBhB4EiwAQ645dr8jIy12y0lvlnqL4acNDcjwpnfLJ4T1erMKedwjcIkZm_vQKkm-shoCfqoQAvD_BwE',
 				},
 				{
 					name: 'Hilton Garden Inn',
