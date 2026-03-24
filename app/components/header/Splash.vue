@@ -19,8 +19,9 @@
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-1/model-horse-1@1280.jpeg`"
+				:srcset="createSrcSets(1).jpeg"
 				fetchpriority="high"
-				alt="Horse sculpture" />
+				alt="Model horse" />
 		</picture>
 		<picture
 			class="splash-slide animate-slide-2 md:object-[0%_30%] lg:object-[0%_20%]">
@@ -32,8 +33,9 @@
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-4/model-horse-4@1280.jpeg`"
+				:srcset="createSrcSets(4).jpeg"
 				fetchpriority="high"
-				alt="Horse sculpture" />
+				alt="Model horse" />
 		</picture>
 		<picture class="splash-slide animate-slide-3 md:object-[0%_5%]">
 			<source
@@ -44,8 +46,9 @@
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-3/model-horse-3@1280.jpeg`"
+				:srcset="createSrcSets(3).jpeg"
 				fetchpriority="high"
-				alt="Model of a horse facing left" />
+				alt="Model horse with show ribbons" />
 		</picture>
 		<picture class="splash-slide animate-slide-4 md:object-[0%_20%]">
 			<source
@@ -56,8 +59,9 @@
 				type="image/webp" />
 			<img
 				:src="`${imgBaseUrl}/model-horse-2/model-horse-2@1280.jpeg`"
+				:srcset="createSrcSets(2).jpeg"
 				fetchpriority="high"
-				alt="Model of a horse and rider" />
+				alt="Model horse with show ribbons" />
 		</picture>
 		<div
 			class="absolute h-full w-full bg-[linear-gradient(to_right,rgba(222,145,29,0.9),rgba(247,201,72,0.7),rgba(247,201,72,0.8),rgba(64,195,247,0.7))]"></div>

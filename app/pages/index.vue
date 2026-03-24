@@ -1,6 +1,11 @@
 <script setup lang="ts">
 	import { CANONICAL_URL, SITE_DESCRIPTION, SITE_TITLE } from '~/lib/constants';
 	import { dayOneLongDateString, dayTwoLongDateString } from '~/lib/dates';
+	import { API_URL } from '~/lib/constants';
+
+	const fileName = '2026_gw_model_list_form';
+	const wordUrl = `${API_URL}/files/${fileName}.docx`;
+	const pdfUrl = `${API_URL}/files/${fileName}.pdf`;
 
 	useHead({ title: 'Home', link: [{ rel: 'canonical', href: CANONICAL_URL }] });
 
@@ -81,6 +86,35 @@
 					variant="outline"
 					class="mt-4 font-bold transition-all duration-200 hover:scale-110 lg:mt-6"
 					to="/entry" />
+			</div>
+			<div class="flex flex-col items-center gap-4">
+				<span
+					class="mb-2 ml-0 mt-0 text-sm uppercase text-gray-500 dark:text-gray-400">
+					Model Lists
+				</span>
+				<div class="flex flex-col items-center justify-center gap-6">
+					<UButton
+						icon="i-heroicons-document-arrow-down"
+						label="Download MS Word"
+						size="lg"
+						variant="outline"
+						class="font-bold transition-all duration-200 hover:scale-110"
+						:to="wordUrl"
+						:filename="`${fileName}.docx`"
+						title="Download Model List in Word Format"
+						download />
+					<UButton
+						icon="i-heroicons-document-arrow-down"
+						label="Download PDF"
+						size="lg"
+						variant="outline"
+						class="font-bold transition-all duration-200 hover:scale-110"
+						:to="pdfUrl"
+						target="_blank"
+						:filename="`${fileName}.pdf`"
+						title="Download Model List in PDF Format"
+						download />
+				</div>
 			</div>
 			<div class="flex flex-col items-center gap-4">
 				<span
